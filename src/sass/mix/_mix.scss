@@ -1,0 +1,25 @@
+@mixin content-product($pad) {
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 1.5;
+    padding: $pad;
+    background: #fbfbfb;
+}
+@mixin title-cont($color){
+    @extend %font-title;
+    display: inline-block;
+    color: $color;
+    vertical-align: top;
+}
+@mixin image($val) {
+    width: 100%;
+    margin: auto;
+    object-fit: $val;
+    cursor: pointer;
+}
+@mixin font(){
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}

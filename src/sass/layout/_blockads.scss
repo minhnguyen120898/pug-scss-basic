@@ -1,0 +1,53 @@
+#blockads{
+
+.inner {
+    width: 1260px;
+    position: relative;
+    margin: 0 auto 48px;
+    overflow: hidden;
+}
+.wrap-items{
+    width: 500%;
+    position: relative;
+    margin: 0;
+    left: 0;
+    animation: slide3 10s infinite;
+    .items{
+        width: 20%;
+        float: left;
+    }
+    img{
+        width: 1260px;
+        height: auto;
+    }
+}
+@keyframes slide3 {
+    0% {
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+}

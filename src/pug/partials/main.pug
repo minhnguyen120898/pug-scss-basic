@@ -1,0 +1,103 @@
+- const cl = ["jobs-name","icon-star-empty"]
+mixin label
+    label(for="slide1")
+    label(for="slide2")
+    label(for="slide3")
+    label(for="slide4")
+mixin jobs(head,name,a)
+    li(style!=attributes.style)
+        p.jobs-company= head
+        p(class=cl)= name 
+        a(href="#")= a
+        i(class="fa fa-caret-right")
+mixin slides(src,name,count)
+    .slide(class!=attributes.class)
+        img(src=src, alt="")
+        .content-slide
+            h3= name
+            if block
+                block
+            else
+                p No content provided    
+            .foot-slide
+                p= count
+                   <i class="fas fa-arrow-right"></i>
+                p <i class="far fa-star"></i>
+section#content-slider
+        .main-slide
+            .title-slide
+                h3  
+                    <span>Công ty</span> nổi bật
+            input(type="radio" name="slider" id="slide1" checked)
+            input(type="radio" name="slider" id="slide2")
+            input(type="radio" name="slider" id="slide3")
+            input(type="radio" name="slider" id="slide4")    
+            .main-item-slide
+                .overflow
+                    .inner                       
+                        +slides("./assets/images/company.jpg","Công Ty CP Tin học Lạc Việt","2 jobs ")(class="slide_1")
+                                p.
+                                    Thành lập ngày 03/02/1994, đến nay Cty CP Tin học Lạc Việt đã trở thành...
+                                i 
+                                    p. 
+                                        Hơn 20 năm luôn tiên phong trong ngành điện toán
+                                p.local Quận Phú Nhuận, Hồ Chí Minh
+                        +slides("./assets/images/seoul1-OVDgH.png","Korean IT Companies","2 jobs ")(class="slide_2")
+                                p. 
+                                    Korean IT Companies came to Vietnam with the mission of connecting Vietn...
+                                i
+                                    p. 
+                                        A BRIDGE BETWEEN INNOVATIVE TECHNOLOGYAND INDUSTRY IN VIETNAM    
+                                p.local Hồ Chí Minh, Hà Nội
+                        +slides("./assets/images/SouthTelecom.jpg","South Telecom","3 jobs ")(class="slide_3")
+                                p. 
+                                    South Telecom là Nhà cung cấp dịch vụ số - DSP (Digital Service Provider...
+                                i
+                                    p. 
+                                        Nhà cung cấp dịch vụ số - DSP (Digital Service Provider)   
+                                p.local Hồ Chí Minh                                    
+                        +slides("./assets/images/panasonic.jpg","PANASONIC R&amp;D CENTER VIETNAM CO., LTD.","2 jobs ")(class="slide_4")
+                                p.
+                                    Panasonic is one of the largest and leading electronic product manufactu... 
+                                i 
+                                    p A Better Life, A Better World    
+                                p Hà Nội                           
+            #controls
+                +label
+            #bullets
+                +label                  
+        .main-thumb
+            ul.nav-slide
+                li(style={"border-bottom":"1px solid #e1e1e1"})                    
+                    img(src="./assets/images/company1.png", alt="")
+                li(style={"border-bottom":"1px solid #e1e1e1"})
+                    img(src="./assets/images/company2.png", alt="")
+                li 
+                    img(src="./assets/images/company3.png", alt="")
+        .wrap-hot-jobs
+            .title-slide
+                h3  
+                    <span>Công Việc</span> Hot Hôm Nay
+            .slide-hot-jobs   
+                .overflow2    
+                    .wrap-info-item
+                        ul.item
+                            +jobs("HEAD CAPITAL","Graphic Design","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
+                            +jobs("Công Ty CP Tin học Lạc Việt","Kiểm Tra Chất Lượng Phần Mềm (Tester)","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
+                            +jobs("Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)",".Net Back-End Developer","Đăng nhập để xem mức lương")
+                        ul.item
+                            +jobs("HEAD CAPITAL","Graphic Design","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
+                            +jobs("Công Ty CP Tin học Lạc Việt","Kiểm Tra Chất Lượng Phần Mềm (Tester)","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
+                            +jobs("Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)",".Net Back-End Developer","Đăng nhập để xem mức lương")
+                        ul.item
+                            +jobs("HEAD CAPITAL","Graphic Design","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
+                            +jobs("Công Ty CP Tin học Lạc Việt","Kiểm Tra Chất Lượng Phần Mềm (Tester)","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
+                            +jobs("Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)",".Net Back-End Developer","Đăng nhập để xem mức lương")    
+                        ul.item
+                            +jobs("HEAD CAPITAL","Graphic Design","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
+                            +jobs("Công Ty CP Tin học Lạc Việt","Kiểm Tra Chất Lượng Phần Mềm (Tester)","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
+                            +jobs("Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)",".Net Back-End Developer","Đăng nhập để xem mức lương")
+                        ul.item
+                            +jobs("HEAD CAPITAL","Graphic Design","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
+                            +jobs("Công Ty CP Tin học Lạc Việt","Kiểm Tra Chất Lượng Phần Mềm (Tester)","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
+                            +jobs("Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)",".Net Back-End Developer","Đăng nhập để xem mức lương")                

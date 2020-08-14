@@ -1,0 +1,31 @@
+mixin card(src,title,cont)
+    li.news
+        .card
+            .card-header
+                a(href="#")
+                    img(src=src, alt="")
+            .card-title
+                a(href="#")
+                    h3
+                        span= title
+            .card-description
+                p= cont
+            .foot-card
+                a(href="#") Read more
+                span Today
+section#news-life
+    .content
+        .title-cont
+            h2
+                strong.tit-cont Cuộc Sống IT
+        ul.wrap-news
+            +card("https://topdev.vn/blog/wp-content/uploads/2020/08/hacking-300x157.jpg","Top 10 lỗ hổng bảo mật ứng dụng Web 2020 (OWASP) (Phần 1)","Tác giả: Bui Xuan Huy B Top 10 OWASP có lẽ không phải khái niệm xa lạ gì với những người tìm hiểu về An toàn thông tin,...")
+            +card("https://topdev.vn/blog/wp-content/uploads/2020/08/boyans-300x157.jpg","Sử dụng useMemo và useCallback trong việc tối ưu code – ReactJS","Tác giả: Duc Minh Pham Trong bài viết lần này, chúng ta sẽ làm rõ về việc sử dụng useMemo useMemo và useCallback để tối...")
+            +card("https://topdev.vn/blog/wp-content/uploads/2020/08/boxmodelasv-300x157.jpg","CSS Box Model – Các cách hiển thị element với thuộc tính display","Mở đầu Đây là bài viết cuối trong series về CSS Box Model của mình. Nếu như các bài viết trước tập trung phân tích sâu ...")
+            +card("https://topdev.vn/blog/wp-content/uploads/2020/08/Benefits-of-Quiz-04-1200-x-628-1-300x157.png","Dự thi Quiz 04 của Kambria Code Challenge với tổng giải thưởng lên đến 700$","Đăng ký dự thi Quiz 04 của Kambria Code Challenge ngay hôm nay với tổng giải thưởng lên đến $700 cùng nhiều cơ hội nghề...")
+            +card("https://topdev.vn/blog/wp-content/uploads/2020/08/Maslow-1-300x157.jpg","Tháp nhu cầu Maslow và ứng dụng trong quản lý nhân sự","Ảnh hưởng từ đại dịch toàn cầu Covid -19, nhu cầu tuyển dụng nhân sự ngày được quan tâm hơn. Đặc biệt, sự cạnh tranh kh...")
+            +card("https://topdev.vn/blog/wp-content/uploads/2020/08/hacking-300x157.jpg","Top 10 lỗ hổng bảo mật ứng dụng Web 2020 (OWASP) (Phần 1)","Tác giả: Bui Xuan Huy B Top 10 OWASP có lẽ không phải khái niệm xa lạ gì với những người tìm hiểu về An toàn thông tin,...")
+            +card("https://topdev.vn/blog/wp-content/uploads/2020/08/boyans-300x157.jpg","Sử dụng useMemo và useCallback trong việc tối ưu code – ReactJS","Tác giả: Duc Minh Pham Trong bài viết lần này, chúng ta sẽ làm rõ về việc sử dụng useMemo useMemo và useCallback để tối...")
+            +card("https://topdev.vn/blog/wp-content/uploads/2020/08/boxmodelasv-300x157.jpg","CSS Box Model – Các cách hiển thị element với thuộc tính display","Mở đầu Đây là bài viết cuối trong series về CSS Box Model của mình. Nếu như các bài viết trước tập trung phân tích sâu ...")
+            +card("https://topdev.vn/blog/wp-content/uploads/2020/08/Benefits-of-Quiz-04-1200-x-628-1-300x157.png","Dự thi Quiz 04 của Kambria Code Challenge với tổng giải thưởng lên đến 700$","Đăng ký dự thi Quiz 04 của Kambria Code Challenge ngay hôm nay với tổng giải thưởng lên đến $700 cùng nhiều cơ hội nghề...")
+            +card("https://topdev.vn/blog/wp-content/uploads/2020/08/Maslow-1-300x157.jpg","Tháp nhu cầu Maslow và ứng dụng trong quản lý nhân sự","Ảnh hưởng từ đại dịch toàn cầu Covid -19, nhu cầu tuyển dụng nhân sự ngày được quan tâm hơn. Đặc biệt, sự cạnh tranh kh...")

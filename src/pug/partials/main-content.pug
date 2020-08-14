@@ -1,0 +1,184 @@
+- const arr1= ["Thưởng và lương tháng 13","BHXH, BHYT và BHTN theo quy định BLLĐ","Bảo hiểm sức khoẻ của Bảo Việt"]
+- const arr2= ["Các chế độ thưởng cho cán bộ trong các dịp lễ tết, bổ sung quỹ thu nhập 6 tháng đầu năm và đầy đủ các chế độ về bảo hiểm, thăm ốm, hưu trí.....","Cung cấp trang thiết bị tối ưu, không gian làm việc yên tĩnh phù hợp cho cán bộ nhân viên","Đảm bảo các ngày nghỉ lễ theo đúng quy định của pháp luật, không phải đi làm thứ 7, chủ nhật"]
+- const arr3= ["Salary and bonus based on performance and experience","13th month salary","Insurances base on your real salary"]
+- const arr4= ["Amazing team: Work with the smartest and most hard-working people you’ve ever met. Our team is from Google, Facebook, Lyft, Apple, Oracle, GREE,  and other best companies in Vietnam.","Competitive compensation package: Great salary, bonuses, and stock options. There is no upper limit on how much you can earn. It’s all based on your performance and contributions","Best working environment: Coffee shop like open office space, kitchen full of snacks and drinks, West lake view bar, video games, 3D TV, soccer table, etc."]
+- const arr5= ["Global and Dynamic working environment with global talents from Oculus VR, Facebook, Google, Amazon","Professional development and abroad opportunities with clear career path","Cooperating with many domestic and multi-national partners"]
+- const arr6= ["Competitive salary with stock option"]
+- const arr7= ["Thưởng tháng 13","Team building"]
+- const array1 = ["Java","Android","System Admin","Design","Mobile"]
+- const array2 = ["Salary and bonus based on performance and experience","13th month salary","Insurances base on your real salary"]
+- const array3 = ["Oracle","SQL",".NET"]
+- const array4 = ["Bảo hiểm theo quy định","Chăm sóc sức khỏe","Chế độ nghỉ phép"]
+- const array5 = ["Java","Unity","NodeJS","VueJS","Javascript/jquery","UX/UI Design","C#","WordPress"]
+- const array6 = ["Very competitive remuneration package.","Social insurance, medical insurance &amp;amp; unemployment insurance according to Vietnam Labor Law.","Healthcare insurance package."]
+- const array7 = ["C#","Android","Java"]
+- const array8 = ["Ký hợp đồng lao động, hưởng 12 ngày phép năm và các ngày nghỉ lễ, tết theo quy định của nhà nước","Review tăng lương","Lương tháng 13"]
+
+mixin salary-link
+    p.salary
+        span.s-login
+            a(href="#") Đăng nhập để xem mức lương 
+            i(class="fa fa-caret-right")
+mixin salary(salary)
+    p.salary
+        i(class="fas fa-dollar-sign")
+        span.s-salary= salary
+        span.s-login
+            a(href="#") Đăng nhập để xem mức lương 
+            i(class="fa fa-caret-right")
+mixin product-item(src,name,address,jobs,array)
+    li.product-items
+        .box-product
+            a(href="#")
+            span.product-logo
+                img(src=src, alt="")
+            h3
+                strong.name-product= name
+            .row
+                .col-12.pos-rel
+                    if block
+                        block
+                .col-8
+                    p.address= address
+                .col-4.side.job-ago= jobs                                        
+            .row.top-benefits
+                .col-12
+                    ul
+                        ul
+                            each item in array
+                                li
+                                    span.txt= item
+            em.product_desc.open
+mixin prodItem-min(src,name,array,address,jobs,array1)
+    li.product-items
+        .box-product
+            a(href="#")
+            span.product-logo
+                img(src=src, alt="")
+            h3
+                strong.name-product= name
+            .row
+                .col-9
+                    .job-bottom
+                        .tag-list
+                            each item in array
+                                a(href="#")
+                                    span= item
+                .col-3.side
+                    p 
+                        i(class="far fa-star")
+            .row
+                .col-9
+                    p.address= address
+                .col-3.side= jobs                                        
+            .row.top-benefits
+                .col-12
+                    ul
+                        each item in array1
+                            li
+                                span.txt= item
+            em.product_desc.open
+section#main-content
+    .content-product
+        .inner-content
+            .top-product
+                h2
+                    strong.title-cont Các Công Ty Phổ Biến
+                    span.flr.wrap-link
+                        a(href="#") Làm việc tại công ty IT Hàn Quốc
+                        .arrow-right
+                            span
+                            span
+                            span
+            ul.list-product
+                li.product-items
+                    .box-product
+                        a(href="#").link-product
+                        span.product-logo
+                            img(src="https://salt.topdev.vn/LPfxXHDzfE69AuodQEm99HJFTgABEH3llCKQQdFAipw/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA4LzAzL2xvZ28taXQtb2NtcC1BZHFSeC5wbmc/logo-it-ocmp-adqrx.png", alt="")
+                        h3
+                            strong.name-product Korean IT Companies    
+                        .row
+                            .col-9
+                            .col-3.side
+                                p
+                                    <i class="far fa-star"></i>
+                        .row
+                            .col-9
+                                p.address Hồ Chí Minh, Hà Nội
+                            .col-3.side
+                                a(href="#") Tiếp                              
+                                    i(class="fa fa-arrow-right")
+                        .row.top-benefits
+                            .col-12
+                                ul
+                        em.product_desc.open
+                            |Korean IT Companies came to Vietnam with the mission of connecting Vietnamese Developers with Korean technology. 
+                            |Through that, Korean IT Companies wish to give the IT Talents in Vietnam the opportunity to experience an international and professional working environment to maximize their careers. 
+                            |Korean IT Companies believe that, with the opportunities that we will bri...
+                +product-item("https://salt.topdev.vn/h39GLZiH-ma6ztu5juOFwrDrmcPipDta8a54X1ciN5Y/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzI4L2xvZ29fUnhWU0l3SlRHWVFLZU1ZZDByQzZMWVVscGFWdWZwQnQtblZhSG4ucG5n/logo-rxvsiwjtgyqkemyd0rc6lyulpavufpbt-nvahn.png","Front-end Developer (Shopify)","Quận Đống Đa, Hà Nội","2 ngày trước",arr1)
+                    +salary("2********* VND")
+                +product-item("https://salt.topdev.vn/3d-gPODA0cpeZ405ou0XN5SrxDmtpNcNV-QaRm7vGc0/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2Y2MTFhZmQyZTUzNjZkMDMwNDE5MTVmNjIwYzlhYjA0LmpwZw/f611afd2e5366d03041915f620c9ab04.jpg","02 Chuyên viên Vận hành phần mềm","Quận Cầu Giấy, Hà Nội","2 ngày trước",arr2)
+                    +salary-link
+                +product-item("https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg","Java Developer (Java core, Vert.x, Spring)","Quận Tân Bình, Hồ Chí Minh","12 giờ trước",arr3)
+                    +salary-link
+                +product-item("https://salt.topdev.vn/LrfcwEjKRYMzdR3U0aYTC-6EEP1WIwyOpC7_39HLvCo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2ZjUXR0YXhGSVhSNmwyR1lEdlAzLnBuZw/fcqttaxfixr6l2gydvp3.png","QA Engineer (Tester)","Quận Tây Hồ, Hà Nội","2 ngày trước",arr4)
+                    +salary("5** - 1**** USD")
+                +product-item("https://salt.topdev.vn/vAB_ExLVx9FKqNg_SiKL1gB1SN-PZLCqKNxsySU6oqk/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzEzL0NvbXBhbnlMb2dvLUR1THBzLnBuZw/companylogo-dulps.png","Security GRC Specialist","Quận Hai Bà Trưng, Hà Nội","3 ngày trước",arr5)
+                    +salary-link
+                +product-item("https://salt.topdev.vn/8Ji4yIoL5ktJBfovrzkUnLd895c-T2RuTbZNXOKNS-o/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zLzdkMmZhY2JlZDUyN2QzNjA4OTYwNmU4MTZiZDBjY2Q4LnBuZw/7d2facbed527d36089606e816bd0ccd8.png","[Remote] Full-stack Developer","Hồ Chí Minh","1 ngày trước",arr6)
+                    +salary-link
+                +product-item("https://salt.topdev.vn/HR68jSt5ROsHSk7GIl4ctcEd4y-T0zYsnmbD9mYPgq0/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzIyLzUwMTIxODQyOTE2NWNjZmUzOTE2NWstZENpOGQuanBn/501218429165ccfe39165k-dci8d.jpg","IT Software Operation","Huyện Tân Thành, Bà Rịa - Vũng Tàu","2 tuần trước",arr7)
+                    +salary("5** - 6** USD")            
+                +product-item("https://salt.topdev.vn/h39GLZiH-ma6ztu5juOFwrDrmcPipDta8a54X1ciN5Y/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzI4L2xvZ29fUnhWU0l3SlRHWVFLZU1ZZDByQzZMWVVscGFWdWZwQnQtblZhSG4ucG5n/logo-rxvsiwjtgyqkemyd0rc6lyulpavufpbt-nvahn.png","Front-end Developer (Shopify)","Quận Đống Đa, Hà Nội","2 ngày trước",arr1)
+                    +salary("2********* VND")
+                +product-item("https://salt.topdev.vn/3d-gPODA0cpeZ405ou0XN5SrxDmtpNcNV-QaRm7vGc0/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2Y2MTFhZmQyZTUzNjZkMDMwNDE5MTVmNjIwYzlhYjA0LmpwZw/f611afd2e5366d03041915f620c9ab04.jpg","02 Chuyên viên Vận hành phần mềm","Quận Cầu Giấy, Hà Nội","2 ngày trước",arr2)
+                    +salary-link
+                +product-item("https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg","Java Developer (Java core, Vert.x, Spring)","Quận Tân Bình, Hồ Chí Minh","12 giờ trước",arr3)
+                    +salary-link
+                +product-item("https://salt.topdev.vn/LrfcwEjKRYMzdR3U0aYTC-6EEP1WIwyOpC7_39HLvCo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2ZjUXR0YXhGSVhSNmwyR1lEdlAzLnBuZw/fcqttaxfixr6l2gydvp3.png","QA Engineer (Tester)","Quận Tây Hồ, Hà Nội","2 ngày trước",arr4)
+                    +salary("5** - 1**** USD")
+                +product-item("https://salt.topdev.vn/vAB_ExLVx9FKqNg_SiKL1gB1SN-PZLCqKNxsySU6oqk/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzEzL0NvbXBhbnlMb2dvLUR1THBzLnBuZw/companylogo-dulps.png","Security GRC Specialist","Quận Hai Bà Trưng, Hà Nội","3 ngày trước",arr5)
+                    +salary-link
+                +product-item("https://salt.topdev.vn/8Ji4yIoL5ktJBfovrzkUnLd895c-T2RuTbZNXOKNS-o/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zLzdkMmZhY2JlZDUyN2QzNjA4OTYwNmU4MTZiZDBjY2Q4LnBuZw/7d2facbed527d36089606e816bd0ccd8.png","[Remote] Full-stack Developer","Hồ Chí Minh","1 ngày trước",arr6)
+                    +salary-link
+                +product-item("https://salt.topdev.vn/HR68jSt5ROsHSk7GIl4ctcEd4y-T0zYsnmbD9mYPgq0/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzIyLzUwMTIxODQyOTE2NWNjZmUzOTE2NWstZENpOGQuanBn/501218429165ccfe39165k-dci8d.jpg","IT Software Operation","Huyện Tân Thành, Bà Rịa - Vũng Tàu","2 tuần trước",arr7)
+                    +salary("5** - 6** USD")    
+                +product-item("https://salt.topdev.vn/LrfcwEjKRYMzdR3U0aYTC-6EEP1WIwyOpC7_39HLvCo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2ZjUXR0YXhGSVhSNmwyR1lEdlAzLnBuZw/fcqttaxfixr6l2gydvp3.png","QA Engineer (Tester)","Quận Tây Hồ, Hà Nội","2 ngày trước",arr4)
+                    +salary("5** - 1**** USD")
+            .clear
+    .content-product
+        .inner-content     
+                .top-product
+                    h2
+                        strong.title-cont Các Công Ty Nổi Bật
+                ul.list-product.min-listProd
+                    +prodItem-min("https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg","VNIB TECH Co. Ltd",array1,"Quận Tân Bình, Hồ Chí Minh","6 jobs",array2)
+                    +prodItem-min("https://salt.topdev.vn/b4l9WXMW6NI12A1pl5KoWZNS_1MlqGGaVvjfrEpWVgo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA0LzIzLzdneERxeTZOd3ptdkZoNzJkcmFqUDNHSHhUMzZFaEw4LmpwZw/7gxdqy6nwzmvfh72drajp3ghxt36ehl8.jpg","Prudential",array3,"Quận 1, Quận 8","4 jobs",array4)
+                    +prodItem-min("https://salt.topdev.vn/EL_WfCL92d3SUO918hc3l2D4UTnQa4mTisnasZKxm6g/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzE2LzgyZDg0Njk3MDc3ZjY2YWQzNTZmYzdmNzNiNWVjNDQ4LVpqYzJ3LnBuZw/82d84697077f66ad356fc7f73b5ec448-zjc2w.png","LASTMILE WORKS",array5,"Quận 1, Hồ Chí Minh","4 jobs",array6)
+                    +prodItem-min("https://salt.topdev.vn/ctUtkNj2mE1vKocXLPcYkVKh3zTpixrR7Cok2fZ69Dg/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2IxNTA4NTg1ZTE0MDY2OWUxMmNlMmI5YWI0NWQzNDE5LnBuZw/b1508585e140669e12ce2b9ab45d3419.png","Mintpot",array7,"Quận Cầu Giấy, Hà Nội","3 jobs",array8)
+                    +prodItem-min("https://salt.topdev.vn/3mlUAVsJzXiZEKdETH3d7CpJoFssKekYXUUkhBqgDyQ/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zLzA4ZGM2YjA5MjM2ZWQ5MWViMzQwMDcxZDI2YjlmZTVmLnBuZw/08dc6b09236ed91eb340071d26b9fe5f.png","LOGIVAN Technologies Pte.,",array3,"Quận 3, Quận Ba Đình","3 jobs",array4)
+                    +prodItem-min("https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg","VNIB TECH Co. Ltd",array1,"Quận Tân Bình, Hồ Chí Minh","6 jobs",array2)
+                    +prodItem-min("https://salt.topdev.vn/b4l9WXMW6NI12A1pl5KoWZNS_1MlqGGaVvjfrEpWVgo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA0LzIzLzdneERxeTZOd3ptdkZoNzJkcmFqUDNHSHhUMzZFaEw4LmpwZw/7gxdqy6nwzmvfh72drajp3ghxt36ehl8.jpg","Prudential",array3,"Quận 1, Quận 8","4 jobs",array4)
+                    +prodItem-min("https://salt.topdev.vn/EL_WfCL92d3SUO918hc3l2D4UTnQa4mTisnasZKxm6g/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzE2LzgyZDg0Njk3MDc3ZjY2YWQzNTZmYzdmNzNiNWVjNDQ4LVpqYzJ3LnBuZw/82d84697077f66ad356fc7f73b5ec448-zjc2w.png","LASTMILE WORKS",array5,"Quận 1, Hồ Chí Minh","4 jobs",array6)
+                    +prodItem-min("https://salt.topdev.vn/ctUtkNj2mE1vKocXLPcYkVKh3zTpixrR7Cok2fZ69Dg/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2IxNTA4NTg1ZTE0MDY2OWUxMmNlMmI5YWI0NWQzNDE5LnBuZw/b1508585e140669e12ce2b9ab45d3419.png","Mintpot",array7,"Quận Cầu Giấy, Hà Nội","3 jobs",array8)
+                    +prodItem-min("https://salt.topdev.vn/3mlUAVsJzXiZEKdETH3d7CpJoFssKekYXUUkhBqgDyQ/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zLzA4ZGM2YjA5MjM2ZWQ5MWViMzQwMDcxZDI2YjlmZTVmLnBuZw/08dc6b09236ed91eb340071d26b9fe5f.png","LOGIVAN Technologies Pte.,",array3,"Quận 3, Quận Ba Đình","3 jobs",array4)
+                    +prodItem-min("https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg","VNIB TECH Co. Ltd",array1,"Quận Tân Bình, Hồ Chí Minh","6 jobs",array2)
+                    +prodItem-min("https://salt.topdev.vn/b4l9WXMW6NI12A1pl5KoWZNS_1MlqGGaVvjfrEpWVgo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA0LzIzLzdneERxeTZOd3ptdkZoNzJkcmFqUDNHSHhUMzZFaEw4LmpwZw/7gxdqy6nwzmvfh72drajp3ghxt36ehl8.jpg","Prudential",array3,"Quận 1, Quận 8","4 jobs",array4)
+                    +prodItem-min("https://salt.topdev.vn/EL_WfCL92d3SUO918hc3l2D4UTnQa4mTisnasZKxm6g/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzE2LzgyZDg0Njk3MDc3ZjY2YWQzNTZmYzdmNzNiNWVjNDQ4LVpqYzJ3LnBuZw/82d84697077f66ad356fc7f73b5ec448-zjc2w.png","LASTMILE WORKS",array5,"Quận 1, Hồ Chí Minh","4 jobs",array6)
+                    +prodItem-min("https://salt.topdev.vn/ctUtkNj2mE1vKocXLPcYkVKh3zTpixrR7Cok2fZ69Dg/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2IxNTA4NTg1ZTE0MDY2OWUxMmNlMmI5YWI0NWQzNDE5LnBuZw/b1508585e140669e12ce2b9ab45d3419.png","Mintpot",array7,"Quận Cầu Giấy, Hà Nội","3 jobs",array8)
+                    +prodItem-min("https://salt.topdev.vn/3mlUAVsJzXiZEKdETH3d7CpJoFssKekYXUUkhBqgDyQ/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zLzA4ZGM2YjA5MjM2ZWQ5MWViMzQwMDcxZDI2YjlmZTVmLnBuZw/08dc6b09236ed91eb340071d26b9fe5f.png","LOGIVAN Technologies Pte.,",array3,"Quận 3, Quận Ba Đình","3 jobs",array4)
+                    +prodItem-min("https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg","VNIB TECH Co. Ltd",array1,"Quận Tân Bình, Hồ Chí Minh","6 jobs",array2)
+                    +prodItem-min("https://salt.topdev.vn/b4l9WXMW6NI12A1pl5KoWZNS_1MlqGGaVvjfrEpWVgo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA0LzIzLzdneERxeTZOd3ptdkZoNzJkcmFqUDNHSHhUMzZFaEw4LmpwZw/7gxdqy6nwzmvfh72drajp3ghxt36ehl8.jpg","Prudential",array3,"Quận 1, Quận 8","4 jobs",array4)
+                    +prodItem-min("https://salt.topdev.vn/EL_WfCL92d3SUO918hc3l2D4UTnQa4mTisnasZKxm6g/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzE2LzgyZDg0Njk3MDc3ZjY2YWQzNTZmYzdmNzNiNWVjNDQ4LVpqYzJ3LnBuZw/82d84697077f66ad356fc7f73b5ec448-zjc2w.png","LASTMILE WORKS",array5,"Quận 1, Hồ Chí Minh","4 jobs",array6)
+                    +prodItem-min("https://salt.topdev.vn/ctUtkNj2mE1vKocXLPcYkVKh3zTpixrR7Cok2fZ69Dg/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2IxNTA4NTg1ZTE0MDY2OWUxMmNlMmI5YWI0NWQzNDE5LnBuZw/b1508585e140669e12ce2b9ab45d3419.png","Mintpot",array7,"Quận Cầu Giấy, Hà Nội","3 jobs",array8)
+                    +prodItem-min("https://salt.topdev.vn/3mlUAVsJzXiZEKdETH3d7CpJoFssKekYXUUkhBqgDyQ/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zLzA4ZGM2YjA5MjM2ZWQ5MWViMzQwMDcxZDI2YjlmZTVmLnBuZw/08dc6b09236ed91eb340071d26b9fe5f.png","LOGIVAN Technologies Pte.,",array3,"Quận 3, Quận Ba Đình","3 jobs",array4)
+                    +prodItem-min("https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg","VNIB TECH Co. Ltd",array1,"Quận Tân Bình, Hồ Chí Minh","6 jobs",array2)
+                    +prodItem-min("https://salt.topdev.vn/b4l9WXMW6NI12A1pl5KoWZNS_1MlqGGaVvjfrEpWVgo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA0LzIzLzdneERxeTZOd3ptdkZoNzJkcmFqUDNHSHhUMzZFaEw4LmpwZw/7gxdqy6nwzmvfh72drajp3ghxt36ehl8.jpg","Prudential",array3,"Quận 1, Quận 8","4 jobs",array4)
+                    +prodItem-min("https://salt.topdev.vn/EL_WfCL92d3SUO918hc3l2D4UTnQa4mTisnasZKxm6g/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzE2LzgyZDg0Njk3MDc3ZjY2YWQzNTZmYzdmNzNiNWVjNDQ4LVpqYzJ3LnBuZw/82d84697077f66ad356fc7f73b5ec448-zjc2w.png","LASTMILE WORKS",array5,"Quận 1, Hồ Chí Minh","4 jobs",array6)
+                    +prodItem-min("https://salt.topdev.vn/ctUtkNj2mE1vKocXLPcYkVKh3zTpixrR7Cok2fZ69Dg/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2IxNTA4NTg1ZTE0MDY2OWUxMmNlMmI5YWI0NWQzNDE5LnBuZw/b1508585e140669e12ce2b9ab45d3419.png","Mintpot",array7,"Quận Cầu Giấy, Hà Nội","3 jobs",array8)
+                    +prodItem-min("https://salt.topdev.vn/3mlUAVsJzXiZEKdETH3d7CpJoFssKekYXUUkhBqgDyQ/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zLzA4ZGM2YjA5MjM2ZWQ5MWViMzQwMDcxZDI2YjlmZTVmLnBuZw/08dc6b09236ed91eb340071d26b9fe5f.png","LOGIVAN Technologies Pte.,",array3,"Quận 3, Quận Ba Đình","3 jobs",array4)
+                .clear
+        
+                    
+                    

@@ -1,0 +1,24 @@
+- const add = ["Tất cả địa điểm","Hồ Chí Minh","Đà Nẵng","Hà Nội"]
+- const classSearch = ["option","option-search","icon-iconfinder_search_322497"]
+- const skills = ["HackerRank","JavaScript","Python","Java","C/C++","PHP","Swift","C-Sharp","Ruby","Objective-C","GoLang"]
+
+section#search
+    form(action="#" method="get")
+        .main-search
+            div(class=classSearch)
+                input(type="text" placeholder="Nhập từ khóa tìm kiếm")
+            .option.option-area
+                select#select(name="address")
+                    each item in add
+                        option= item
+            button.btn-search 
+                span Tìm
+        .main-search.main-search-2#search-hide
+            .top-search
+                ul
+                    each item in skills                       
+                        li 
+                            a(href="#")= item
+            .hide-skillsSearch
+                p('onclick'="hide()") Ẩn Tất Cả Top Tìm Kiếm  
+                

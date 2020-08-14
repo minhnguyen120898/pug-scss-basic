@@ -1,0 +1,1940 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopDev.vn - Pug and Scss demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrap-ads">
+      <div class="wrap-ads__logo"><a href="#"> <span>hide content</span></a>
+        <p>
+          <span>IT Jobs</span>
+          for Top Developers
+        </p>
+      </div>
+      <div class="wrap-ads__bar">
+        <ul class="bar_contacts">     
+          <li style="padding-left:5px;"><img class="icon_lang" src="./assets/images/vietnam.png" alt="vietnam"></li>
+          <li style="padding:0 5px;"><a href="#" style="border-right:1px solid black;"><i class="fas fa-id-card"></i> Liên hệ</a></li>
+          <li style="padding:0 5px;"><a href="#" style="border-right:1px solid black;"><i class="fas fa-file-contract"></i> Đăng tuyển </a></li>
+          <li style="padding:0 5px;"><a href="tel:028.6273.3496" style="border-right:1px solid black;">
+               <i class="fas fa-phone-square-alt"></i> 028.6273.3496         </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header_main bg-secondary" id="header_main">
+      <header class="header-sticky">
+        <div class="inner">
+          <div class="wrap-menu-dropdown">
+            <div class="btn-menu"><i class="fas fa-bars"></i></div>
+            <div class="menu-list-dropdown">
+              <div class="list">
+                <div class="side">
+                  <dl>
+                    <dt>1263</dt>
+                    <dd> <a href="#">IT Jobs</a></dd>
+                  </dl>
+                  <dl>
+                    <dt> 2656</dt>
+                    <dd><a href="#">IT Companies            </a></dd>
+                  </dl>
+                </div>
+                <div class="side side2">
+                      <div class="side-list"><a href="#">
+                          <h3>By Jobs Level</h3></a>
+                        <div class="wrap-ul">
+                          <ul>
+                            <li><a href="#">Intership</a></li>
+                            <li><a href="#">Fresher</a></li>
+                            <li><a href="#">Developer</a></li>
+                            <li><a href="#">Leader</a></li>
+                            <li><a href="#">Manager</a></li>
+                            <li><a href="#">CTO</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="side-list"><a href="#">
+                          <h3>By Location</h3></a>
+                        <div class="wrap-ul">
+                          <ul>
+                            <li><a href="#">Hồ Chí Minh</a></li>
+                            <li><a href="#">Hà Nội</a></li>
+                            <li><a href="#">Đà Nẵng</a></li>
+                            <li><a href="#">Cần Thơ</a></li>
+                            <li><a href="#">Other</a></li>
+                            <li><a href="#">Oversea</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="side-list"><a href="#">
+                          <h3>By Job Type/Company Size</h3></a>
+                        <div class="wrap-ul">
+                          <ul>
+                            <li><a href="#">Full-time</a></li>
+                            <li><a href="#">Part-time</a></li>
+                            <li><a href="#">Freelance</a></li>
+                            <li><a href="#">Remote</a></li>
+                            <li><a href="#">Oversea</a></li>
+                          </ul>
+                          <ul>
+                            <li><a href="#">2-10</a></li>
+                            <li><a href="#">11-50</a></li>
+                            <li><a href="#">51-200</a></li>
+                            <li><a href="#">201-500</a></li>
+                            <li><a href="#">501-1000</a></li>
+                            <li><a href="#">1000+</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="side-list"><a href="#">
+                          <h3>By Salary Range</h3></a>
+                        <div class="wrap-ul">
+                          <ul>
+                            <li><a href="#">&lt; $300</a></li>
+                            <li><a href="#">$300 - $500</a></li>
+                            <li><a href="#">$500 - $700</a></li>
+                            <li><a href="#">$700 - $1000</a></li>
+                            <li><a href="#">$1000 - $1200</a></li>
+                            <li><a href="#">$1200 - $1500</a></li>
+                            <li><a href="#">$1500 - $2000</a></li>
+                            <li><a href="#">&gt; $2000</a></li>
+                          </ul>            
+                        </div>
+                      </div>
+                </div>
+                <div class="side side3">
+                      <div class="side-list"><a href="#">
+                          <h3>By Industry</h3></a>
+                        <div class="wrap-ul">
+                          <ul>
+                            <li><a href="#">Accounting</a></li>
+                            <li><a href="#">Advertising/Media</a></li>
+                            <li><a href="#">Argriculture</a></li>
+                            <li><a href="#">Automotive</a></li>
+                            <li><a href="#">Banking</a></li>
+                            <li><a href="#">Business Services</a></li>
+                            <li><a href="#">Computer Hardware</a></li>
+                            <li><a href="#">Computer Software</a></li>
+                            <li><a href="#">Internet</a></li>
+                            <li><a href="#">Law Enforcement</a></li>
+                            <li><a href="#">Leisure, Travel &amp;amp; Tourism</a></li>
+                            <li><a href="#">Logistics, Transportation &amp;amp; Supply Chain</a></li>
+                            <li><a href="#">E-Commerce/ Retail</a></li>
+                            <li><a href="#">Education/E-Learning</a></li>
+                            <li><a href="#">Entertainment/Game</a></li>
+                            <li><a href="#">Food &amp;amp; Beverage</a></li>
+                            <li><a href="#">Health, Beauty and Fitness</a></li>
+                            <li><a href="#">Energy</a></li>
+                            <li><a href="#">Fintech</a></li>
+                            <li><a href="#">Human Resource</a></li>
+                            <li><a href="#">Manufacturing</a></li>
+                            <li><a href="#">Outsourcing/Offshoring</a></li>
+                            <li><a href="#">Telecommunications</a></li>
+                            <li><a href="#">Other</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                </div>
+                <div class="side side3">
+                      <div class="side-list"><a href="#">
+                          <h3>TopDev</h3></a>
+                        <div class="wrap-ul">
+                          <ul>
+                            <li><a href="#">Job Posting</a></li>
+                            <li><a href="#">Job Ad</a></li>
+                            <li><a href="#">D.I.R</a></li>
+                            <li><a href="#">TopDev Premium</a></li>
+                            <li><a href="#">Employer Branding</a></li>
+                            <li><a href="#">TopDev Reward</a></li>
+                            <li><a href="#">IT Market Report</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav> 
+            <ul class="nav-menu">
+              <li class="main-link">
+                <ul>
+                  <li><a href="#">Tìm việc IT</a></li>
+                  <li><a href="#">Sự kiện</a></li>
+                  <li><a href="#">Cuộc sống IT</a></li>
+                  <li><a href="#">Chuyện nghề HR</a></li>
+                  <li><a href="#">Tạo CV</a></li>
+                  <li><a href="#">Thị trường IT</a></li>
+                  <li><a href="#">TopDev x HackerRank</a></li>
+                </ul>
+              </li>
+              <li class="main-button">
+                <ul class="group-button">
+                  <li><a class="btn-login" href="#"><span>Đăng Nhập</span></a></li>
+                  <li><a class="btn-pushjob" href="#"><span>Đăng tuyển <i class="fa fa-arrow-right"></i></span></a></li>
+                </ul>
+              </li>
+              <form method="get" action="#">
+                <li class="search-bar">
+                  <div class="key-searchbar">
+                    <input type="text" placeholder="Nhập từ khóa của bạn">
+                  </div>
+                </li>
+              </form>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <section id="search">
+      <form action="#" method="get">
+        <div class="main-search">
+          <div class="option option-search icon-iconfinder_search_322497">
+            <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+          </div>
+          <div class="option option-area">
+            <select id="select" name="address">
+              <option>Tất cả địa điểm</option>
+              <option>Hồ Chí Minh</option>
+              <option>Đà Nẵng</option>
+              <option>Hà Nội</option>
+            </select>
+          </div>
+          <button class="btn-search"> <span>Tìm</span></button>
+        </div>
+        <div class="main-search main-search-2" id="search-hide">
+          <div class="top-search">
+            <ul>
+              <li> <a href="#">HackerRank</a></li>
+              <li> <a href="#">JavaScript</a></li>
+              <li> <a href="#">Python</a></li>
+              <li> <a href="#">Java</a></li>
+              <li> <a href="#">C/C++</a></li>
+              <li> <a href="#">PHP</a></li>
+              <li> <a href="#">Swift</a></li>
+              <li> <a href="#">C-Sharp</a></li>
+              <li> <a href="#">Ruby</a></li>
+              <li> <a href="#">Objective-C</a></li>
+              <li> <a href="#">GoLang</a></li>
+            </ul>
+          </div>
+          <div class="hide-skillsSearch">
+            <p onclick="hide()">Ẩn Tất Cả Top Tìm Kiếm  </p>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section id="content-slider">
+      <div class="main-slide">
+        <div class="title-slide">
+          <h3>
+             <span>Công ty</span> nổi bật</h3>
+        </div>
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div class="main-item-slide">
+          <div class="overflow">
+            <div class="inner">                      
+                  <div class="slide slide_1"><img src="./assets/images/company.jpg" alt="">
+                    <div class="content-slide">
+                      <h3>Công Ty CP Tin học Lạc Việt</h3>
+                      <p>Thành lập ngày 03/02/1994, đến nay Cty CP Tin học Lạc Việt đã trở thành...</p><i> 
+                        <p>Hơn 20 năm luôn tiên phong trong ngành điện toán</p></i>
+                      <p class="local">Quận Phú Nhuận, Hồ Chí Minh</p>
+                      <div class="foot-slide">
+                        <p>2 jobs <i class="fas fa-arrow-right"></i></p>
+                        <p><i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide slide_2"><img src="./assets/images/seoul1-OVDgH.png" alt="">
+                    <div class="content-slide">
+                      <h3>Korean IT Companies</h3>
+                      <p>Korean IT Companies came to Vietnam with the mission of connecting Vietn...</p><i>
+                        <p>A BRIDGE BETWEEN INNOVATIVE TECHNOLOGYAND INDUSTRY IN VIETNAM    </p></i>
+                      <p class="local">Hồ Chí Minh, Hà Nội</p>
+                      <div class="foot-slide">
+                        <p>2 jobs <i class="fas fa-arrow-right"></i></p>
+                        <p><i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide slide_3"><img src="./assets/images/SouthTelecom.jpg" alt="">
+                    <div class="content-slide">
+                      <h3>South Telecom</h3>
+                      <p>South Telecom là Nhà cung cấp dịch vụ số - DSP (Digital Service Provider...</p><i>
+                        <p>Nhà cung cấp dịch vụ số - DSP (Digital Service Provider)   </p></i>
+                      <p class="local">Hồ Chí Minh                                    </p>
+                      <div class="foot-slide">
+                        <p>3 jobs <i class="fas fa-arrow-right"></i></p>
+                        <p><i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide slide_4"><img src="./assets/images/panasonic.jpg" alt="">
+                    <div class="content-slide">
+                      <h3>PANASONIC R&amp;amp;D CENTER VIETNAM CO., LTD.</h3>
+                      <p>Panasonic is one of the largest and leading electronic product manufactu... </p><i> 
+                        <p>A Better Life, A Better World    </p></i>
+                      <p>Hà Nội                           </p>
+                      <div class="foot-slide">
+                        <p>2 jobs <i class="fas fa-arrow-right"></i></p>
+                        <p><i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div id="controls">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+        </div>
+      </div>
+      <div class="main-thumb">
+        <ul class="nav-slide">
+          <li style="border-bottom:1px solid #e1e1e1;">                   <img src="./assets/images/company1.png" alt=""></li>
+          <li style="border-bottom:1px solid #e1e1e1;"><img src="./assets/images/company2.png" alt=""></li>
+          <li> <img src="./assets/images/company3.png" alt=""></li>
+        </ul>
+      </div>
+      <div class="wrap-hot-jobs">
+        <div class="title-slide">
+          <h3>
+             <span>Công Việc</span> Hot Hôm Nay</h3>
+        </div>
+        <div class="slide-hot-jobs">  
+          <div class="overflow2">   
+            <div class="wrap-info-item">
+              <ul class="item">
+                    <li style="border-bottom:1px solid #e1e1e1;">
+                      <p class="jobs-company">HEAD CAPITAL</p>
+                      <p class="jobs-name icon-star-empty">Graphic Design</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+                    <li style="border-bottom:1px solid #e1e1e1;">
+                      <p class="jobs-company">Công Ty CP Tin học Lạc Việt</p>
+                      <p class="jobs-name icon-star-empty">Kiểm Tra Chất Lượng Phần Mềm (Tester)</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+                    <li>
+                      <p class="jobs-company">Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)</p>
+                      <p class="jobs-name icon-star-empty">.Net Back-End Developer</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+              </ul>
+              <ul class="item">
+                    <li style="border-bottom:1px solid #e1e1e1;">
+                      <p class="jobs-company">HEAD CAPITAL</p>
+                      <p class="jobs-name icon-star-empty">Graphic Design</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+                    <li style="border-bottom:1px solid #e1e1e1;">
+                      <p class="jobs-company">Công Ty CP Tin học Lạc Việt</p>
+                      <p class="jobs-name icon-star-empty">Kiểm Tra Chất Lượng Phần Mềm (Tester)</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+                    <li>
+                      <p class="jobs-company">Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)</p>
+                      <p class="jobs-name icon-star-empty">.Net Back-End Developer</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+              </ul>
+              <ul class="item">
+                    <li style="border-bottom:1px solid #e1e1e1;">
+                      <p class="jobs-company">HEAD CAPITAL</p>
+                      <p class="jobs-name icon-star-empty">Graphic Design</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+                    <li style="border-bottom:1px solid #e1e1e1;">
+                      <p class="jobs-company">Công Ty CP Tin học Lạc Việt</p>
+                      <p class="jobs-name icon-star-empty">Kiểm Tra Chất Lượng Phần Mềm (Tester)</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+                    <li>
+                      <p class="jobs-company">Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)</p>
+                      <p class="jobs-name icon-star-empty">.Net Back-End Developer</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+              </ul>
+              <ul class="item">
+                    <li style="border-bottom:1px solid #e1e1e1;">
+                      <p class="jobs-company">HEAD CAPITAL</p>
+                      <p class="jobs-name icon-star-empty">Graphic Design</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+                    <li style="border-bottom:1px solid #e1e1e1;">
+                      <p class="jobs-company">Công Ty CP Tin học Lạc Việt</p>
+                      <p class="jobs-name icon-star-empty">Kiểm Tra Chất Lượng Phần Mềm (Tester)</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+                    <li>
+                      <p class="jobs-company">Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)</p>
+                      <p class="jobs-name icon-star-empty">.Net Back-End Developer</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+              </ul>
+              <ul class="item">
+                    <li style="border-bottom:1px solid #e1e1e1;">
+                      <p class="jobs-company">HEAD CAPITAL</p>
+                      <p class="jobs-name icon-star-empty">Graphic Design</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+                    <li style="border-bottom:1px solid #e1e1e1;">
+                      <p class="jobs-company">Công Ty CP Tin học Lạc Việt</p>
+                      <p class="jobs-name icon-star-empty">Kiểm Tra Chất Lượng Phần Mềm (Tester)</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+                    <li>
+                      <p class="jobs-company">Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)</p>
+                      <p class="jobs-name icon-star-empty">.Net Back-End Developer</p><a href="#">Đăng nhập để xem mức lương</a><i class="fa fa-caret-right"></i>
+                    </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="main-content">
+      <div class="content-product">
+        <div class="inner-content">
+          <div class="top-product">
+            <h2><strong class="title-cont">Các Công Ty Phổ Biến</strong><span class="flr wrap-link"><a href="#">Làm việc tại công ty IT Hàn Quốc</a>
+                <div class="arrow-right"><span></span><span></span><span></span></div></span></h2>
+          </div>
+          <ul class="list-product">
+            <li class="product-items">
+              <div class="box-product"><a class="link-product" href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/LPfxXHDzfE69AuodQEm99HJFTgABEH3llCKQQdFAipw/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA4LzAzL2xvZ28taXQtb2NtcC1BZHFSeC5wbmc/logo-it-ocmp-adqrx.png" alt=""></span>
+                <h3><strong class="name-product">Korean IT Companies    </strong></h3>
+                <div class="row">
+                  <div class="col-9"></div>
+                  <div class="col-3 side">
+                    <p><i class="far fa-star"></i></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-9">
+                    <p class="address">Hồ Chí Minh, Hà Nội</p>
+                  </div>
+                  <div class="col-3 side"><a href="#">Tiếp                              <i class="fa fa-arrow-right"></i></a></div>
+                </div>
+                <div class="row top-benefits">
+                  <div class="col-12">
+                    <ul></ul>
+                  </div>
+                </div><em class="product_desc open">
+                  Korean IT Companies came to Vietnam with the mission of connecting Vietnamese Developers with Korean technology. 
+                  Through that, Korean IT Companies wish to give the IT Talents in Vietnam the opportunity to experience an international and professional working environment to maximize their careers. 
+                  Korean IT Companies believe that, with the opportunities that we will bri...</em>
+              </div>
+            </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/h39GLZiH-ma6ztu5juOFwrDrmcPipDta8a54X1ciN5Y/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzI4L2xvZ29fUnhWU0l3SlRHWVFLZU1ZZDByQzZMWVVscGFWdWZwQnQtblZhSG4ucG5n/logo-rxvsiwjtgyqkemyd0rc6lyulpavufpbt-nvahn.png" alt=""></span>
+                    <h3><strong class="name-product">Front-end Developer (Shopify)</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><i class="fas fa-dollar-sign"></i><span class="s-salary">2********* VND</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Quận Đống Đa, Hà Nội</p>
+                      </div>
+                      <div class="col-4 side job-ago">2 ngày trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Thưởng và lương tháng 13</span></li>
+                            <li><span class="txt">BHXH, BHYT và BHTN theo quy định BLLĐ</span></li>
+                            <li><span class="txt">Bảo hiểm sức khoẻ của Bảo Việt</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/3d-gPODA0cpeZ405ou0XN5SrxDmtpNcNV-QaRm7vGc0/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2Y2MTFhZmQyZTUzNjZkMDMwNDE5MTVmNjIwYzlhYjA0LmpwZw/f611afd2e5366d03041915f620c9ab04.jpg" alt=""></span>
+                    <h3><strong class="name-product">02 Chuyên viên Vận hành phần mềm</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Quận Cầu Giấy, Hà Nội</p>
+                      </div>
+                      <div class="col-4 side job-ago">2 ngày trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Các chế độ thưởng cho cán bộ trong các dịp lễ tết, bổ sung quỹ thu nhập 6 tháng đầu năm và đầy đủ các chế độ về bảo hiểm, thăm ốm, hưu trí.....</span></li>
+                            <li><span class="txt">Cung cấp trang thiết bị tối ưu, không gian làm việc yên tĩnh phù hợp cho cán bộ nhân viên</span></li>
+                            <li><span class="txt">Đảm bảo các ngày nghỉ lễ theo đúng quy định của pháp luật, không phải đi làm thứ 7, chủ nhật</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg" alt=""></span>
+                    <h3><strong class="name-product">Java Developer (Java core, Vert.x, Spring)</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Quận Tân Bình, Hồ Chí Minh</p>
+                      </div>
+                      <div class="col-4 side job-ago">12 giờ trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Salary and bonus based on performance and experience</span></li>
+                            <li><span class="txt">13th month salary</span></li>
+                            <li><span class="txt">Insurances base on your real salary</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/LrfcwEjKRYMzdR3U0aYTC-6EEP1WIwyOpC7_39HLvCo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2ZjUXR0YXhGSVhSNmwyR1lEdlAzLnBuZw/fcqttaxfixr6l2gydvp3.png" alt=""></span>
+                    <h3><strong class="name-product">QA Engineer (Tester)</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><i class="fas fa-dollar-sign"></i><span class="s-salary">5** - 1**** USD</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Quận Tây Hồ, Hà Nội</p>
+                      </div>
+                      <div class="col-4 side job-ago">2 ngày trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Amazing team: Work with the smartest and most hard-working people you’ve ever met. Our team is from Google, Facebook, Lyft, Apple, Oracle, GREE,  and other best companies in Vietnam.</span></li>
+                            <li><span class="txt">Competitive compensation package: Great salary, bonuses, and stock options. There is no upper limit on how much you can earn. It’s all based on your performance and contributions</span></li>
+                            <li><span class="txt">Best working environment: Coffee shop like open office space, kitchen full of snacks and drinks, West lake view bar, video games, 3D TV, soccer table, etc.</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/vAB_ExLVx9FKqNg_SiKL1gB1SN-PZLCqKNxsySU6oqk/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzEzL0NvbXBhbnlMb2dvLUR1THBzLnBuZw/companylogo-dulps.png" alt=""></span>
+                    <h3><strong class="name-product">Security GRC Specialist</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Quận Hai Bà Trưng, Hà Nội</p>
+                      </div>
+                      <div class="col-4 side job-ago">3 ngày trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Global and Dynamic working environment with global talents from Oculus VR, Facebook, Google, Amazon</span></li>
+                            <li><span class="txt">Professional development and abroad opportunities with clear career path</span></li>
+                            <li><span class="txt">Cooperating with many domestic and multi-national partners</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/8Ji4yIoL5ktJBfovrzkUnLd895c-T2RuTbZNXOKNS-o/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zLzdkMmZhY2JlZDUyN2QzNjA4OTYwNmU4MTZiZDBjY2Q4LnBuZw/7d2facbed527d36089606e816bd0ccd8.png" alt=""></span>
+                    <h3><strong class="name-product">[Remote] Full-stack Developer</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Hồ Chí Minh</p>
+                      </div>
+                      <div class="col-4 side job-ago">1 ngày trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Competitive salary with stock option</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/HR68jSt5ROsHSk7GIl4ctcEd4y-T0zYsnmbD9mYPgq0/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzIyLzUwMTIxODQyOTE2NWNjZmUzOTE2NWstZENpOGQuanBn/501218429165ccfe39165k-dci8d.jpg" alt=""></span>
+                    <h3><strong class="name-product">IT Software Operation</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><i class="fas fa-dollar-sign"></i><span class="s-salary">5** - 6** USD</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Huyện Tân Thành, Bà Rịa - Vũng Tàu</p>
+                      </div>
+                      <div class="col-4 side job-ago">2 tuần trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Thưởng tháng 13</span></li>
+                            <li><span class="txt">Team building</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/h39GLZiH-ma6ztu5juOFwrDrmcPipDta8a54X1ciN5Y/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzI4L2xvZ29fUnhWU0l3SlRHWVFLZU1ZZDByQzZMWVVscGFWdWZwQnQtblZhSG4ucG5n/logo-rxvsiwjtgyqkemyd0rc6lyulpavufpbt-nvahn.png" alt=""></span>
+                    <h3><strong class="name-product">Front-end Developer (Shopify)</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><i class="fas fa-dollar-sign"></i><span class="s-salary">2********* VND</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Quận Đống Đa, Hà Nội</p>
+                      </div>
+                      <div class="col-4 side job-ago">2 ngày trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Thưởng và lương tháng 13</span></li>
+                            <li><span class="txt">BHXH, BHYT và BHTN theo quy định BLLĐ</span></li>
+                            <li><span class="txt">Bảo hiểm sức khoẻ của Bảo Việt</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/3d-gPODA0cpeZ405ou0XN5SrxDmtpNcNV-QaRm7vGc0/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2Y2MTFhZmQyZTUzNjZkMDMwNDE5MTVmNjIwYzlhYjA0LmpwZw/f611afd2e5366d03041915f620c9ab04.jpg" alt=""></span>
+                    <h3><strong class="name-product">02 Chuyên viên Vận hành phần mềm</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Quận Cầu Giấy, Hà Nội</p>
+                      </div>
+                      <div class="col-4 side job-ago">2 ngày trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Các chế độ thưởng cho cán bộ trong các dịp lễ tết, bổ sung quỹ thu nhập 6 tháng đầu năm và đầy đủ các chế độ về bảo hiểm, thăm ốm, hưu trí.....</span></li>
+                            <li><span class="txt">Cung cấp trang thiết bị tối ưu, không gian làm việc yên tĩnh phù hợp cho cán bộ nhân viên</span></li>
+                            <li><span class="txt">Đảm bảo các ngày nghỉ lễ theo đúng quy định của pháp luật, không phải đi làm thứ 7, chủ nhật</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg" alt=""></span>
+                    <h3><strong class="name-product">Java Developer (Java core, Vert.x, Spring)</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Quận Tân Bình, Hồ Chí Minh</p>
+                      </div>
+                      <div class="col-4 side job-ago">12 giờ trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Salary and bonus based on performance and experience</span></li>
+                            <li><span class="txt">13th month salary</span></li>
+                            <li><span class="txt">Insurances base on your real salary</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/LrfcwEjKRYMzdR3U0aYTC-6EEP1WIwyOpC7_39HLvCo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2ZjUXR0YXhGSVhSNmwyR1lEdlAzLnBuZw/fcqttaxfixr6l2gydvp3.png" alt=""></span>
+                    <h3><strong class="name-product">QA Engineer (Tester)</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><i class="fas fa-dollar-sign"></i><span class="s-salary">5** - 1**** USD</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Quận Tây Hồ, Hà Nội</p>
+                      </div>
+                      <div class="col-4 side job-ago">2 ngày trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Amazing team: Work with the smartest and most hard-working people you’ve ever met. Our team is from Google, Facebook, Lyft, Apple, Oracle, GREE,  and other best companies in Vietnam.</span></li>
+                            <li><span class="txt">Competitive compensation package: Great salary, bonuses, and stock options. There is no upper limit on how much you can earn. It’s all based on your performance and contributions</span></li>
+                            <li><span class="txt">Best working environment: Coffee shop like open office space, kitchen full of snacks and drinks, West lake view bar, video games, 3D TV, soccer table, etc.</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/vAB_ExLVx9FKqNg_SiKL1gB1SN-PZLCqKNxsySU6oqk/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzEzL0NvbXBhbnlMb2dvLUR1THBzLnBuZw/companylogo-dulps.png" alt=""></span>
+                    <h3><strong class="name-product">Security GRC Specialist</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Quận Hai Bà Trưng, Hà Nội</p>
+                      </div>
+                      <div class="col-4 side job-ago">3 ngày trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Global and Dynamic working environment with global talents from Oculus VR, Facebook, Google, Amazon</span></li>
+                            <li><span class="txt">Professional development and abroad opportunities with clear career path</span></li>
+                            <li><span class="txt">Cooperating with many domestic and multi-national partners</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/8Ji4yIoL5ktJBfovrzkUnLd895c-T2RuTbZNXOKNS-o/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zLzdkMmZhY2JlZDUyN2QzNjA4OTYwNmU4MTZiZDBjY2Q4LnBuZw/7d2facbed527d36089606e816bd0ccd8.png" alt=""></span>
+                    <h3><strong class="name-product">[Remote] Full-stack Developer</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Hồ Chí Minh</p>
+                      </div>
+                      <div class="col-4 side job-ago">1 ngày trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Competitive salary with stock option</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/HR68jSt5ROsHSk7GIl4ctcEd4y-T0zYsnmbD9mYPgq0/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzIyLzUwMTIxODQyOTE2NWNjZmUzOTE2NWstZENpOGQuanBn/501218429165ccfe39165k-dci8d.jpg" alt=""></span>
+                    <h3><strong class="name-product">IT Software Operation</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><i class="fas fa-dollar-sign"></i><span class="s-salary">5** - 6** USD</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Huyện Tân Thành, Bà Rịa - Vũng Tàu</p>
+                      </div>
+                      <div class="col-4 side job-ago">2 tuần trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Thưởng tháng 13</span></li>
+                            <li><span class="txt">Team building</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/LrfcwEjKRYMzdR3U0aYTC-6EEP1WIwyOpC7_39HLvCo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2ZjUXR0YXhGSVhSNmwyR1lEdlAzLnBuZw/fcqttaxfixr6l2gydvp3.png" alt=""></span>
+                    <h3><strong class="name-product">QA Engineer (Tester)</strong></h3>
+                    <div class="row">
+                      <div class="col-12 pos-rel">
+                            <p class="salary"><i class="fas fa-dollar-sign"></i><span class="s-salary">5** - 1**** USD</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="col-8">
+                        <p class="address">Quận Tây Hồ, Hà Nội</p>
+                      </div>
+                      <div class="col-4 side job-ago">2 ngày trước</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <ul>
+                            <li><span class="txt">Amazing team: Work with the smartest and most hard-working people you’ve ever met. Our team is from Google, Facebook, Lyft, Apple, Oracle, GREE,  and other best companies in Vietnam.</span></li>
+                            <li><span class="txt">Competitive compensation package: Great salary, bonuses, and stock options. There is no upper limit on how much you can earn. It’s all based on your performance and contributions</span></li>
+                            <li><span class="txt">Best working environment: Coffee shop like open office space, kitchen full of snacks and drinks, West lake view bar, video games, 3D TV, soccer table, etc.</span></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="content-product">
+        <div class="inner-content">    
+          <div class="top-product">
+            <h2><strong class="title-cont">Các Công Ty Nổi Bật</strong></h2>
+          </div>
+          <ul class="list-product min-listProd">
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg" alt=""></span>
+                    <h3><strong class="name-product">VNIB TECH Co. Ltd</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Java</span></a><a href="#"><span>Android</span></a><a href="#"><span>System Admin</span></a><a href="#"><span>Design</span></a><a href="#"><span>Mobile</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận Tân Bình, Hồ Chí Minh</p>
+                      </div>
+                      <div class="col-3 side">6 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Salary and bonus based on performance and experience</span></li>
+                          <li><span class="txt">13th month salary</span></li>
+                          <li><span class="txt">Insurances base on your real salary</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/b4l9WXMW6NI12A1pl5KoWZNS_1MlqGGaVvjfrEpWVgo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA0LzIzLzdneERxeTZOd3ptdkZoNzJkcmFqUDNHSHhUMzZFaEw4LmpwZw/7gxdqy6nwzmvfh72drajp3ghxt36ehl8.jpg" alt=""></span>
+                    <h3><strong class="name-product">Prudential</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Oracle</span></a><a href="#"><span>SQL</span></a><a href="#"><span>.NET</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 1, Quận 8</p>
+                      </div>
+                      <div class="col-3 side">4 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Bảo hiểm theo quy định</span></li>
+                          <li><span class="txt">Chăm sóc sức khỏe</span></li>
+                          <li><span class="txt">Chế độ nghỉ phép</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/EL_WfCL92d3SUO918hc3l2D4UTnQa4mTisnasZKxm6g/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzE2LzgyZDg0Njk3MDc3ZjY2YWQzNTZmYzdmNzNiNWVjNDQ4LVpqYzJ3LnBuZw/82d84697077f66ad356fc7f73b5ec448-zjc2w.png" alt=""></span>
+                    <h3><strong class="name-product">LASTMILE WORKS</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Java</span></a><a href="#"><span>Unity</span></a><a href="#"><span>NodeJS</span></a><a href="#"><span>VueJS</span></a><a href="#"><span>Javascript/jquery</span></a><a href="#"><span>UX/UI Design</span></a><a href="#"><span>C#</span></a><a href="#"><span>WordPress</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 1, Hồ Chí Minh</p>
+                      </div>
+                      <div class="col-3 side">4 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Very competitive remuneration package.</span></li>
+                          <li><span class="txt">Social insurance, medical insurance &amp;amp;amp; unemployment insurance according to Vietnam Labor Law.</span></li>
+                          <li><span class="txt">Healthcare insurance package.</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/ctUtkNj2mE1vKocXLPcYkVKh3zTpixrR7Cok2fZ69Dg/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2IxNTA4NTg1ZTE0MDY2OWUxMmNlMmI5YWI0NWQzNDE5LnBuZw/b1508585e140669e12ce2b9ab45d3419.png" alt=""></span>
+                    <h3><strong class="name-product">Mintpot</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>C#</span></a><a href="#"><span>Android</span></a><a href="#"><span>Java</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận Cầu Giấy, Hà Nội</p>
+                      </div>
+                      <div class="col-3 side">3 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Ký hợp đồng lao động, hưởng 12 ngày phép năm và các ngày nghỉ lễ, tết theo quy định của nhà nước</span></li>
+                          <li><span class="txt">Review tăng lương</span></li>
+                          <li><span class="txt">Lương tháng 13</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/3mlUAVsJzXiZEKdETH3d7CpJoFssKekYXUUkhBqgDyQ/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zLzA4ZGM2YjA5MjM2ZWQ5MWViMzQwMDcxZDI2YjlmZTVmLnBuZw/08dc6b09236ed91eb340071d26b9fe5f.png" alt=""></span>
+                    <h3><strong class="name-product">LOGIVAN Technologies Pte.,</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Oracle</span></a><a href="#"><span>SQL</span></a><a href="#"><span>.NET</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 3, Quận Ba Đình</p>
+                      </div>
+                      <div class="col-3 side">3 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Bảo hiểm theo quy định</span></li>
+                          <li><span class="txt">Chăm sóc sức khỏe</span></li>
+                          <li><span class="txt">Chế độ nghỉ phép</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg" alt=""></span>
+                    <h3><strong class="name-product">VNIB TECH Co. Ltd</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Java</span></a><a href="#"><span>Android</span></a><a href="#"><span>System Admin</span></a><a href="#"><span>Design</span></a><a href="#"><span>Mobile</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận Tân Bình, Hồ Chí Minh</p>
+                      </div>
+                      <div class="col-3 side">6 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Salary and bonus based on performance and experience</span></li>
+                          <li><span class="txt">13th month salary</span></li>
+                          <li><span class="txt">Insurances base on your real salary</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/b4l9WXMW6NI12A1pl5KoWZNS_1MlqGGaVvjfrEpWVgo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA0LzIzLzdneERxeTZOd3ptdkZoNzJkcmFqUDNHSHhUMzZFaEw4LmpwZw/7gxdqy6nwzmvfh72drajp3ghxt36ehl8.jpg" alt=""></span>
+                    <h3><strong class="name-product">Prudential</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Oracle</span></a><a href="#"><span>SQL</span></a><a href="#"><span>.NET</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 1, Quận 8</p>
+                      </div>
+                      <div class="col-3 side">4 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Bảo hiểm theo quy định</span></li>
+                          <li><span class="txt">Chăm sóc sức khỏe</span></li>
+                          <li><span class="txt">Chế độ nghỉ phép</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/EL_WfCL92d3SUO918hc3l2D4UTnQa4mTisnasZKxm6g/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzE2LzgyZDg0Njk3MDc3ZjY2YWQzNTZmYzdmNzNiNWVjNDQ4LVpqYzJ3LnBuZw/82d84697077f66ad356fc7f73b5ec448-zjc2w.png" alt=""></span>
+                    <h3><strong class="name-product">LASTMILE WORKS</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Java</span></a><a href="#"><span>Unity</span></a><a href="#"><span>NodeJS</span></a><a href="#"><span>VueJS</span></a><a href="#"><span>Javascript/jquery</span></a><a href="#"><span>UX/UI Design</span></a><a href="#"><span>C#</span></a><a href="#"><span>WordPress</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 1, Hồ Chí Minh</p>
+                      </div>
+                      <div class="col-3 side">4 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Very competitive remuneration package.</span></li>
+                          <li><span class="txt">Social insurance, medical insurance &amp;amp;amp; unemployment insurance according to Vietnam Labor Law.</span></li>
+                          <li><span class="txt">Healthcare insurance package.</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/ctUtkNj2mE1vKocXLPcYkVKh3zTpixrR7Cok2fZ69Dg/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2IxNTA4NTg1ZTE0MDY2OWUxMmNlMmI5YWI0NWQzNDE5LnBuZw/b1508585e140669e12ce2b9ab45d3419.png" alt=""></span>
+                    <h3><strong class="name-product">Mintpot</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>C#</span></a><a href="#"><span>Android</span></a><a href="#"><span>Java</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận Cầu Giấy, Hà Nội</p>
+                      </div>
+                      <div class="col-3 side">3 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Ký hợp đồng lao động, hưởng 12 ngày phép năm và các ngày nghỉ lễ, tết theo quy định của nhà nước</span></li>
+                          <li><span class="txt">Review tăng lương</span></li>
+                          <li><span class="txt">Lương tháng 13</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/3mlUAVsJzXiZEKdETH3d7CpJoFssKekYXUUkhBqgDyQ/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zLzA4ZGM2YjA5MjM2ZWQ5MWViMzQwMDcxZDI2YjlmZTVmLnBuZw/08dc6b09236ed91eb340071d26b9fe5f.png" alt=""></span>
+                    <h3><strong class="name-product">LOGIVAN Technologies Pte.,</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Oracle</span></a><a href="#"><span>SQL</span></a><a href="#"><span>.NET</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 3, Quận Ba Đình</p>
+                      </div>
+                      <div class="col-3 side">3 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Bảo hiểm theo quy định</span></li>
+                          <li><span class="txt">Chăm sóc sức khỏe</span></li>
+                          <li><span class="txt">Chế độ nghỉ phép</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg" alt=""></span>
+                    <h3><strong class="name-product">VNIB TECH Co. Ltd</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Java</span></a><a href="#"><span>Android</span></a><a href="#"><span>System Admin</span></a><a href="#"><span>Design</span></a><a href="#"><span>Mobile</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận Tân Bình, Hồ Chí Minh</p>
+                      </div>
+                      <div class="col-3 side">6 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Salary and bonus based on performance and experience</span></li>
+                          <li><span class="txt">13th month salary</span></li>
+                          <li><span class="txt">Insurances base on your real salary</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/b4l9WXMW6NI12A1pl5KoWZNS_1MlqGGaVvjfrEpWVgo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA0LzIzLzdneERxeTZOd3ptdkZoNzJkcmFqUDNHSHhUMzZFaEw4LmpwZw/7gxdqy6nwzmvfh72drajp3ghxt36ehl8.jpg" alt=""></span>
+                    <h3><strong class="name-product">Prudential</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Oracle</span></a><a href="#"><span>SQL</span></a><a href="#"><span>.NET</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 1, Quận 8</p>
+                      </div>
+                      <div class="col-3 side">4 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Bảo hiểm theo quy định</span></li>
+                          <li><span class="txt">Chăm sóc sức khỏe</span></li>
+                          <li><span class="txt">Chế độ nghỉ phép</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/EL_WfCL92d3SUO918hc3l2D4UTnQa4mTisnasZKxm6g/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzE2LzgyZDg0Njk3MDc3ZjY2YWQzNTZmYzdmNzNiNWVjNDQ4LVpqYzJ3LnBuZw/82d84697077f66ad356fc7f73b5ec448-zjc2w.png" alt=""></span>
+                    <h3><strong class="name-product">LASTMILE WORKS</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Java</span></a><a href="#"><span>Unity</span></a><a href="#"><span>NodeJS</span></a><a href="#"><span>VueJS</span></a><a href="#"><span>Javascript/jquery</span></a><a href="#"><span>UX/UI Design</span></a><a href="#"><span>C#</span></a><a href="#"><span>WordPress</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 1, Hồ Chí Minh</p>
+                      </div>
+                      <div class="col-3 side">4 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Very competitive remuneration package.</span></li>
+                          <li><span class="txt">Social insurance, medical insurance &amp;amp;amp; unemployment insurance according to Vietnam Labor Law.</span></li>
+                          <li><span class="txt">Healthcare insurance package.</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/ctUtkNj2mE1vKocXLPcYkVKh3zTpixrR7Cok2fZ69Dg/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2IxNTA4NTg1ZTE0MDY2OWUxMmNlMmI5YWI0NWQzNDE5LnBuZw/b1508585e140669e12ce2b9ab45d3419.png" alt=""></span>
+                    <h3><strong class="name-product">Mintpot</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>C#</span></a><a href="#"><span>Android</span></a><a href="#"><span>Java</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận Cầu Giấy, Hà Nội</p>
+                      </div>
+                      <div class="col-3 side">3 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Ký hợp đồng lao động, hưởng 12 ngày phép năm và các ngày nghỉ lễ, tết theo quy định của nhà nước</span></li>
+                          <li><span class="txt">Review tăng lương</span></li>
+                          <li><span class="txt">Lương tháng 13</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/3mlUAVsJzXiZEKdETH3d7CpJoFssKekYXUUkhBqgDyQ/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zLzA4ZGM2YjA5MjM2ZWQ5MWViMzQwMDcxZDI2YjlmZTVmLnBuZw/08dc6b09236ed91eb340071d26b9fe5f.png" alt=""></span>
+                    <h3><strong class="name-product">LOGIVAN Technologies Pte.,</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Oracle</span></a><a href="#"><span>SQL</span></a><a href="#"><span>.NET</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 3, Quận Ba Đình</p>
+                      </div>
+                      <div class="col-3 side">3 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Bảo hiểm theo quy định</span></li>
+                          <li><span class="txt">Chăm sóc sức khỏe</span></li>
+                          <li><span class="txt">Chế độ nghỉ phép</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg" alt=""></span>
+                    <h3><strong class="name-product">VNIB TECH Co. Ltd</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Java</span></a><a href="#"><span>Android</span></a><a href="#"><span>System Admin</span></a><a href="#"><span>Design</span></a><a href="#"><span>Mobile</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận Tân Bình, Hồ Chí Minh</p>
+                      </div>
+                      <div class="col-3 side">6 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Salary and bonus based on performance and experience</span></li>
+                          <li><span class="txt">13th month salary</span></li>
+                          <li><span class="txt">Insurances base on your real salary</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/b4l9WXMW6NI12A1pl5KoWZNS_1MlqGGaVvjfrEpWVgo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA0LzIzLzdneERxeTZOd3ptdkZoNzJkcmFqUDNHSHhUMzZFaEw4LmpwZw/7gxdqy6nwzmvfh72drajp3ghxt36ehl8.jpg" alt=""></span>
+                    <h3><strong class="name-product">Prudential</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Oracle</span></a><a href="#"><span>SQL</span></a><a href="#"><span>.NET</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 1, Quận 8</p>
+                      </div>
+                      <div class="col-3 side">4 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Bảo hiểm theo quy định</span></li>
+                          <li><span class="txt">Chăm sóc sức khỏe</span></li>
+                          <li><span class="txt">Chế độ nghỉ phép</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/EL_WfCL92d3SUO918hc3l2D4UTnQa4mTisnasZKxm6g/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzE2LzgyZDg0Njk3MDc3ZjY2YWQzNTZmYzdmNzNiNWVjNDQ4LVpqYzJ3LnBuZw/82d84697077f66ad356fc7f73b5ec448-zjc2w.png" alt=""></span>
+                    <h3><strong class="name-product">LASTMILE WORKS</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Java</span></a><a href="#"><span>Unity</span></a><a href="#"><span>NodeJS</span></a><a href="#"><span>VueJS</span></a><a href="#"><span>Javascript/jquery</span></a><a href="#"><span>UX/UI Design</span></a><a href="#"><span>C#</span></a><a href="#"><span>WordPress</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 1, Hồ Chí Minh</p>
+                      </div>
+                      <div class="col-3 side">4 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Very competitive remuneration package.</span></li>
+                          <li><span class="txt">Social insurance, medical insurance &amp;amp;amp; unemployment insurance according to Vietnam Labor Law.</span></li>
+                          <li><span class="txt">Healthcare insurance package.</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/ctUtkNj2mE1vKocXLPcYkVKh3zTpixrR7Cok2fZ69Dg/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2IxNTA4NTg1ZTE0MDY2OWUxMmNlMmI5YWI0NWQzNDE5LnBuZw/b1508585e140669e12ce2b9ab45d3419.png" alt=""></span>
+                    <h3><strong class="name-product">Mintpot</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>C#</span></a><a href="#"><span>Android</span></a><a href="#"><span>Java</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận Cầu Giấy, Hà Nội</p>
+                      </div>
+                      <div class="col-3 side">3 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Ký hợp đồng lao động, hưởng 12 ngày phép năm và các ngày nghỉ lễ, tết theo quy định của nhà nước</span></li>
+                          <li><span class="txt">Review tăng lương</span></li>
+                          <li><span class="txt">Lương tháng 13</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/3mlUAVsJzXiZEKdETH3d7CpJoFssKekYXUUkhBqgDyQ/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zLzA4ZGM2YjA5MjM2ZWQ5MWViMzQwMDcxZDI2YjlmZTVmLnBuZw/08dc6b09236ed91eb340071d26b9fe5f.png" alt=""></span>
+                    <h3><strong class="name-product">LOGIVAN Technologies Pte.,</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Oracle</span></a><a href="#"><span>SQL</span></a><a href="#"><span>.NET</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 3, Quận Ba Đình</p>
+                      </div>
+                      <div class="col-3 side">3 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Bảo hiểm theo quy định</span></li>
+                          <li><span class="txt">Chăm sóc sức khỏe</span></li>
+                          <li><span class="txt">Chế độ nghỉ phép</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg" alt=""></span>
+                    <h3><strong class="name-product">VNIB TECH Co. Ltd</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Java</span></a><a href="#"><span>Android</span></a><a href="#"><span>System Admin</span></a><a href="#"><span>Design</span></a><a href="#"><span>Mobile</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận Tân Bình, Hồ Chí Minh</p>
+                      </div>
+                      <div class="col-3 side">6 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Salary and bonus based on performance and experience</span></li>
+                          <li><span class="txt">13th month salary</span></li>
+                          <li><span class="txt">Insurances base on your real salary</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/b4l9WXMW6NI12A1pl5KoWZNS_1MlqGGaVvjfrEpWVgo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA0LzIzLzdneERxeTZOd3ptdkZoNzJkcmFqUDNHSHhUMzZFaEw4LmpwZw/7gxdqy6nwzmvfh72drajp3ghxt36ehl8.jpg" alt=""></span>
+                    <h3><strong class="name-product">Prudential</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Oracle</span></a><a href="#"><span>SQL</span></a><a href="#"><span>.NET</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 1, Quận 8</p>
+                      </div>
+                      <div class="col-3 side">4 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Bảo hiểm theo quy định</span></li>
+                          <li><span class="txt">Chăm sóc sức khỏe</span></li>
+                          <li><span class="txt">Chế độ nghỉ phép</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/EL_WfCL92d3SUO918hc3l2D4UTnQa4mTisnasZKxm6g/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzE2LzgyZDg0Njk3MDc3ZjY2YWQzNTZmYzdmNzNiNWVjNDQ4LVpqYzJ3LnBuZw/82d84697077f66ad356fc7f73b5ec448-zjc2w.png" alt=""></span>
+                    <h3><strong class="name-product">LASTMILE WORKS</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Java</span></a><a href="#"><span>Unity</span></a><a href="#"><span>NodeJS</span></a><a href="#"><span>VueJS</span></a><a href="#"><span>Javascript/jquery</span></a><a href="#"><span>UX/UI Design</span></a><a href="#"><span>C#</span></a><a href="#"><span>WordPress</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 1, Hồ Chí Minh</p>
+                      </div>
+                      <div class="col-3 side">4 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Very competitive remuneration package.</span></li>
+                          <li><span class="txt">Social insurance, medical insurance &amp;amp;amp; unemployment insurance according to Vietnam Labor Law.</span></li>
+                          <li><span class="txt">Healthcare insurance package.</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/ctUtkNj2mE1vKocXLPcYkVKh3zTpixrR7Cok2fZ69Dg/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2IxNTA4NTg1ZTE0MDY2OWUxMmNlMmI5YWI0NWQzNDE5LnBuZw/b1508585e140669e12ce2b9ab45d3419.png" alt=""></span>
+                    <h3><strong class="name-product">Mintpot</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>C#</span></a><a href="#"><span>Android</span></a><a href="#"><span>Java</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận Cầu Giấy, Hà Nội</p>
+                      </div>
+                      <div class="col-3 side">3 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Ký hợp đồng lao động, hưởng 12 ngày phép năm và các ngày nghỉ lễ, tết theo quy định của nhà nước</span></li>
+                          <li><span class="txt">Review tăng lương</span></li>
+                          <li><span class="txt">Lương tháng 13</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+                <li class="product-items">
+                  <div class="box-product"><a href="#"></a><span class="product-logo"><img src="https://salt.topdev.vn/3mlUAVsJzXiZEKdETH3d7CpJoFssKekYXUUkhBqgDyQ/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zLzA4ZGM2YjA5MjM2ZWQ5MWViMzQwMDcxZDI2YjlmZTVmLnBuZw/08dc6b09236ed91eb340071d26b9fe5f.png" alt=""></span>
+                    <h3><strong class="name-product">LOGIVAN Technologies Pte.,</strong></h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="job-bottom">
+                          <div class="tag-list"><a href="#"><span>Oracle</span></a><a href="#"><span>SQL</span></a><a href="#"><span>.NET</span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3 side">
+                        <p> <i class="far fa-star"></i></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <p class="address">Quận 3, Quận Ba Đình</p>
+                      </div>
+                      <div class="col-3 side">3 jobs</div>
+                    </div>
+                    <div class="row top-benefits">
+                      <div class="col-12">
+                        <ul>
+                          <li><span class="txt">Bảo hiểm theo quy định</span></li>
+                          <li><span class="txt">Chăm sóc sức khỏe</span></li>
+                          <li><span class="txt">Chế độ nghỉ phép</span></li>
+                        </ul>
+                      </div>
+                    </div><em class="product_desc open"></em>
+                  </div>
+                </li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </section>
+    <section id="newjobs">
+      <div class="content-product bg-white">
+        <div class="inner-content">
+          <div class="top-product">
+            <h2> <strong class="title-cont">Công Việc Mới Nhất</strong></h2>
+          </div>
+          <div class="list-jobs">
+            <div class="row">
+                  <div class="col-6">
+                    <div class="box-jobs clear">
+                      <div class="logo-jobs"><img src="https://salt.topdev.vn/VBCozgan4pPlxKCF3xsAJkrBX1zUiWiKTiG7NhN2Vw8/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzAyLzIxLzE1NTk4MjI2ODg1ODEtVW50aXRsZWQuanBn/1559822688581-untitled.jpg" alt=""></div>
+                      <div class="cont">
+                        <h3 class="job-title">Lập trình viên Java(Java, Web)</h3>
+                        <p class="job-location">Quận Ba Đình, Hà Nội</p>
+                        <p class="job-salary mt"><span class="salary">1**** USD</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="job-favourite">
+                        <p><i class="far fa-star"></i></p>
+                      </div>
+                      <div class="job-ago">
+                        <p>6 hours ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="box-jobs clear">
+                      <div class="logo-jobs"><img src="https://salt.topdev.vn/WxEg6yLbdWXgtz1EPheBkNoZlz1xVwOFLHGEHHOuwxE/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA2LzA0L0lNR1JPVVAtTG9nby0zWWVEMC5wbmc/imgroup-logo-3yed0.png" alt=""></div>
+                      <div class="cont">
+                        <h3 class="job-title">PHP Developer(PHP, Lavarel)</h3>
+                        <p class="job-location">Quận 10, Hồ Chí Minh</p>
+                        <p class="job-salary mt"><span class="salary">1********* - 2********* VND</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="job-favourite">
+                        <p><i class="far fa-star"></i></p>
+                      </div>
+                      <div class="job-ago">
+                        <p>6 hours ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="box-jobs clear">
+                      <div class="logo-jobs"><img src="https://salt.topdev.vn/7nqlgGk-9pFwA80M4kRlD_AlTlRIzsoHP9HZnCvdjF4/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzIyL2xvZ29uSFhWRXFYRFdnN20zdG90YlFrRWYxSk95WGR2OTJqNS1kRXJTUS5wbmc/logonhxveqxdwg7m3totbqkef1joyxdv92j5-dersq.png" alt=""></div>
+                      <div class="cont">
+                        <h3 class="job-title">PHP Developer(PHP, CodeIgniter)</h3>
+                        <p class="job-location">Quận 3, Hồ Chí Minh</p>
+                        <p class="job-salary mt"><span class="salary">1********* - 2********* VND</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="job-favourite">
+                        <p><i class="far fa-star"></i></p>
+                      </div>
+                      <div class="job-ago">
+                        <p>6 hours ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="box-jobs clear">
+                      <div class="logo-jobs"><img src="https://salt.topdev.vn/aWDf4J6qrAcWE-KizMewJs6lZipvHXMK82Ks2uEwu7g/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzIxL2xvZ28xY3hOWnBrRmxRNUhaM2l2R2pwSjJ2MGhlNDVJNThIaS1YVlllNi5wbmc/logo1cxnzpkflq5hz3ivgjpj2v0he45i58hi-xvye6.png" alt=""></div>
+                      <div class="cont">
+                        <h3 class="job-title">Technical Architect (ReactJS, NodeJS)(Technical Architect, NodeJS, ReactJS)</h3>
+                        <p class="job-location">Quận Tân Bình, Hồ Chí Minh</p>
+                        <p class="job-salary mt"><span class="salary">1********* - 2********* VND</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="job-favourite">
+                        <p><i class="far fa-star"></i></p>
+                      </div>
+                      <div class="job-ago">
+                        <p>6 hours ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="box-jobs clear">
+                      <div class="logo-jobs"><img src="https://salt.topdev.vn/kLP13fBPUYIYp1YF8zTbnuLyCmzzpscmJykm3T7xFFo/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2Y3M2EwNzZiNjM3OThiZGI0MjE3NGVkN2JkYWU3NmFlLnBuZw/f73a076b63798bdb42174ed7bdae76ae.png" alt=""></div>
+                      <div class="cont">
+                        <h3 class="job-title">2D Designer(2D Design, UX/UI Design, Web Design)</h3>
+                        <p class="job-location">Quận 3, Hồ Chí Minh</p>
+                        <p class="job-salary mt"><span class="salary">1**** - 1**** USD</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="job-favourite">
+                        <p><i class="far fa-star"></i></p>
+                      </div>
+                      <div class="job-ago">
+                        <p>6 hours ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="box-jobs clear">
+                      <div class="logo-jobs"><img src="https://salt.topdev.vn/VBCozgan4pPlxKCF3xsAJkrBX1zUiWiKTiG7NhN2Vw8/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzAyLzIxLzE1NTk4MjI2ODg1ODEtVW50aXRsZWQuanBn/1559822688581-untitled.jpg" alt=""></div>
+                      <div class="cont">
+                        <h3 class="job-title">Lập trình viên Java(Java, Web)</h3>
+                        <p class="job-location">Quận Ba Đình, Hà Nội</p>
+                        <p class="job-salary mt"><span class="salary">1**** USD</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="job-favourite">
+                        <p><i class="far fa-star"></i></p>
+                      </div>
+                      <div class="job-ago">
+                        <p>6 hours ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="box-jobs clear">
+                      <div class="logo-jobs"><img src="https://salt.topdev.vn/WxEg6yLbdWXgtz1EPheBkNoZlz1xVwOFLHGEHHOuwxE/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA2LzA0L0lNR1JPVVAtTG9nby0zWWVEMC5wbmc/imgroup-logo-3yed0.png" alt=""></div>
+                      <div class="cont">
+                        <h3 class="job-title">PHP Developer(PHP, Lavarel)</h3>
+                        <p class="job-location">Quận 10, Hồ Chí Minh</p>
+                        <p class="job-salary mt"><span class="salary">1********* - 2********* VND</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="job-favourite">
+                        <p><i class="far fa-star"></i></p>
+                      </div>
+                      <div class="job-ago">
+                        <p>6 hours ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="box-jobs clear">
+                      <div class="logo-jobs"><img src="https://salt.topdev.vn/7nqlgGk-9pFwA80M4kRlD_AlTlRIzsoHP9HZnCvdjF4/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzIyL2xvZ29uSFhWRXFYRFdnN20zdG90YlFrRWYxSk95WGR2OTJqNS1kRXJTUS5wbmc/logonhxveqxdwg7m3totbqkef1joyxdv92j5-dersq.png" alt=""></div>
+                      <div class="cont">
+                        <h3 class="job-title">PHP Developer(PHP, CodeIgniter)</h3>
+                        <p class="job-location">Quận 3, Hồ Chí Minh</p>
+                        <p class="job-salary mt"><span class="salary">1********* - 2********* VND</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="job-favourite">
+                        <p><i class="far fa-star"></i></p>
+                      </div>
+                      <div class="job-ago">
+                        <p>6 hours ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="box-jobs clear">
+                      <div class="logo-jobs"><img src="https://salt.topdev.vn/aWDf4J6qrAcWE-KizMewJs6lZipvHXMK82Ks2uEwu7g/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzIxL2xvZ28xY3hOWnBrRmxRNUhaM2l2R2pwSjJ2MGhlNDVJNThIaS1YVlllNi5wbmc/logo1cxnzpkflq5hz3ivgjpj2v0he45i58hi-xvye6.png" alt=""></div>
+                      <div class="cont">
+                        <h3 class="job-title">Technical Architect (ReactJS, NodeJS)(Technical Architect, NodeJS, ReactJS)</h3>
+                        <p class="job-location">Quận Tân Bình, Hồ Chí Minh</p>
+                        <p class="job-salary mt"><span class="salary">1********* - 2********* VND</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="job-favourite">
+                        <p><i class="far fa-star"></i></p>
+                      </div>
+                      <div class="job-ago">
+                        <p>6 hours ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="box-jobs clear">
+                      <div class="logo-jobs"><img src="https://salt.topdev.vn/kLP13fBPUYIYp1YF8zTbnuLyCmzzpscmJykm3T7xFFo/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2Y3M2EwNzZiNjM3OThiZGI0MjE3NGVkN2JkYWU3NmFlLnBuZw/f73a076b63798bdb42174ed7bdae76ae.png" alt=""></div>
+                      <div class="cont">
+                        <h3 class="job-title">2D Designer(2D Design, UX/UI Design, Web Design)</h3>
+                        <p class="job-location">Quận 3, Hồ Chí Minh</p>
+                        <p class="job-salary mt"><span class="salary">1**** - 1**** USD</span><span class="s-login"><a href="#">Đăng nhập để xem mức lương </a><i class="fa fa-caret-right"></i></span></p>
+                      </div>
+                      <div class="job-favourite">
+                        <p><i class="far fa-star"></i></p>
+                      </div>
+                      <div class="job-ago">
+                        <p>6 hours ago</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blockads">
+      <div class="inner">
+        <div class="wrap-items"><a class="items" href="#"><img src="https://salt.topdev.vn/jlhG3O6bE1-bTZF_qkDnkjNZr-5MRSDr98n31ncq7Wo/fit/1517/0/ce/1/aHR0cHM6Ly9uZXR3b3JrLnRvcGRldi52bi91cGxvYWRzL2tpY2MtYmFubmVyZGFpLXBuZy0yMDIwMDgwNDE0MTAxMS5wbmc/korea-it-companies.jpg" alt=""></a><a class="items" href="#"><img src="https://salt.topdev.vn/qFHVcHnS18tPes5lhroY0Kv1yjxu3L5lVRgj9EikVCk/fit/2184/0/ce/1/aHR0cHM6Ly9uZXR3b3JrLnRvcGRldi52bi91cGxvYWRzLzcyOHg5MC0xLWpwZy0yMDIwMDgwNTE0MDQyNC5qcGc.jpg" alt=""></a><a class="items" href="#"><img src="https://salt.topdev.vn/q5XXOzDjWQt6jSylTYXbtWmbnFMZ6GhOfeoot4cbYMc/fit/2184/0/ce/1/aHR0cHM6Ly9uZXR3b3JrLnRvcGRldi52bi91cGxvYWRzLzcyOHg5MC1qcGctMjAyMDA4MDkyMzU0NDAuanBn.jpg" alt=""></a><a class="items" href="#"><img src="https://salt.topdev.vn/AEdcrIjyFU2B0khX0ivQpyTypr4F6g3VMY2wXv2XDSE/fit/2000/0/ce/1/aHR0cHM6Ly9uZXR3b3JrLnRvcGRldi52bi91cGxvYWRzL3NvdXRoLXRlbGVjb20tZGFpdC1mbi1qcGctMjAyMDA3MzAxMDE2MTcuanBn/south-telecom.jpg" alt=""></a><a class="items" href="#"><img src="https://salt.topdev.vn/eYRRi3hLwM7meTxDaVqfvfGdXpizCLKwuNTmkdvXKbg/fit/1517/0/ce/1/aHR0cHM6Ly9uZXR3b3JrLnRvcGRldi52bi91cGxvYWRzL3Zp4buHYy1sYW0taXQtaGFuZy1kauG6p3UtdG9wZGV2LTAxLWRhaS1wbmctMjAyMDA4MDYxNzI4MDAucG5n.jpg" alt=""></a>
+        </div>
+      </div>
+    </section>
+    <section id="news-life">
+      <div class="content">
+        <div class="title-cont">
+          <h2><strong class="tit-cont">Cuộc Sống IT</strong></h2>
+        </div>
+        <ul class="wrap-news">
+              <li class="news">
+                <div class="card">
+                  <div class="card-header"><a href="#"><img src="https://topdev.vn/blog/wp-content/uploads/2020/08/hacking-300x157.jpg" alt=""></a></div>
+                  <div class="card-title"><a href="#">
+                      <h3><span>Top 10 lỗ hổng bảo mật ứng dụng Web 2020 (OWASP) (Phần 1)</span></h3></a></div>
+                  <div class="card-description">
+                    <p>Tác giả: Bui Xuan Huy B Top 10 OWASP có lẽ không phải khái niệm xa lạ gì với những người tìm hiểu về An toàn thông tin,...</p>
+                  </div>
+                  <div class="foot-card"><a href="#">Read more</a><span>Today</span></div>
+                </div>
+              </li>
+              <li class="news">
+                <div class="card">
+                  <div class="card-header"><a href="#"><img src="https://topdev.vn/blog/wp-content/uploads/2020/08/boyans-300x157.jpg" alt=""></a></div>
+                  <div class="card-title"><a href="#">
+                      <h3><span>Sử dụng useMemo và useCallback trong việc tối ưu code – ReactJS</span></h3></a></div>
+                  <div class="card-description">
+                    <p>Tác giả: Duc Minh Pham Trong bài viết lần này, chúng ta sẽ làm rõ về việc sử dụng useMemo useMemo và useCallback để tối...</p>
+                  </div>
+                  <div class="foot-card"><a href="#">Read more</a><span>Today</span></div>
+                </div>
+              </li>
+              <li class="news">
+                <div class="card">
+                  <div class="card-header"><a href="#"><img src="https://topdev.vn/blog/wp-content/uploads/2020/08/boxmodelasv-300x157.jpg" alt=""></a></div>
+                  <div class="card-title"><a href="#">
+                      <h3><span>CSS Box Model – Các cách hiển thị element với thuộc tính display</span></h3></a></div>
+                  <div class="card-description">
+                    <p>Mở đầu Đây là bài viết cuối trong series về CSS Box Model của mình. Nếu như các bài viết trước tập trung phân tích sâu ...</p>
+                  </div>
+                  <div class="foot-card"><a href="#">Read more</a><span>Today</span></div>
+                </div>
+              </li>
+              <li class="news">
+                <div class="card">
+                  <div class="card-header"><a href="#"><img src="https://topdev.vn/blog/wp-content/uploads/2020/08/Benefits-of-Quiz-04-1200-x-628-1-300x157.png" alt=""></a></div>
+                  <div class="card-title"><a href="#">
+                      <h3><span>Dự thi Quiz 04 của Kambria Code Challenge với tổng giải thưởng lên đến 700$</span></h3></a></div>
+                  <div class="card-description">
+                    <p>Đăng ký dự thi Quiz 04 của Kambria Code Challenge ngay hôm nay với tổng giải thưởng lên đến $700 cùng nhiều cơ hội nghề...</p>
+                  </div>
+                  <div class="foot-card"><a href="#">Read more</a><span>Today</span></div>
+                </div>
+              </li>
+              <li class="news">
+                <div class="card">
+                  <div class="card-header"><a href="#"><img src="https://topdev.vn/blog/wp-content/uploads/2020/08/Maslow-1-300x157.jpg" alt=""></a></div>
+                  <div class="card-title"><a href="#">
+                      <h3><span>Tháp nhu cầu Maslow và ứng dụng trong quản lý nhân sự</span></h3></a></div>
+                  <div class="card-description">
+                    <p>Ảnh hưởng từ đại dịch toàn cầu Covid -19, nhu cầu tuyển dụng nhân sự ngày được quan tâm hơn. Đặc biệt, sự cạnh tranh kh...</p>
+                  </div>
+                  <div class="foot-card"><a href="#">Read more</a><span>Today</span></div>
+                </div>
+              </li>
+              <li class="news">
+                <div class="card">
+                  <div class="card-header"><a href="#"><img src="https://topdev.vn/blog/wp-content/uploads/2020/08/hacking-300x157.jpg" alt=""></a></div>
+                  <div class="card-title"><a href="#">
+                      <h3><span>Top 10 lỗ hổng bảo mật ứng dụng Web 2020 (OWASP) (Phần 1)</span></h3></a></div>
+                  <div class="card-description">
+                    <p>Tác giả: Bui Xuan Huy B Top 10 OWASP có lẽ không phải khái niệm xa lạ gì với những người tìm hiểu về An toàn thông tin,...</p>
+                  </div>
+                  <div class="foot-card"><a href="#">Read more</a><span>Today</span></div>
+                </div>
+              </li>
+              <li class="news">
+                <div class="card">
+                  <div class="card-header"><a href="#"><img src="https://topdev.vn/blog/wp-content/uploads/2020/08/boyans-300x157.jpg" alt=""></a></div>
+                  <div class="card-title"><a href="#">
+                      <h3><span>Sử dụng useMemo và useCallback trong việc tối ưu code – ReactJS</span></h3></a></div>
+                  <div class="card-description">
+                    <p>Tác giả: Duc Minh Pham Trong bài viết lần này, chúng ta sẽ làm rõ về việc sử dụng useMemo useMemo và useCallback để tối...</p>
+                  </div>
+                  <div class="foot-card"><a href="#">Read more</a><span>Today</span></div>
+                </div>
+              </li>
+              <li class="news">
+                <div class="card">
+                  <div class="card-header"><a href="#"><img src="https://topdev.vn/blog/wp-content/uploads/2020/08/boxmodelasv-300x157.jpg" alt=""></a></div>
+                  <div class="card-title"><a href="#">
+                      <h3><span>CSS Box Model – Các cách hiển thị element với thuộc tính display</span></h3></a></div>
+                  <div class="card-description">
+                    <p>Mở đầu Đây là bài viết cuối trong series về CSS Box Model của mình. Nếu như các bài viết trước tập trung phân tích sâu ...</p>
+                  </div>
+                  <div class="foot-card"><a href="#">Read more</a><span>Today</span></div>
+                </div>
+              </li>
+              <li class="news">
+                <div class="card">
+                  <div class="card-header"><a href="#"><img src="https://topdev.vn/blog/wp-content/uploads/2020/08/Benefits-of-Quiz-04-1200-x-628-1-300x157.png" alt=""></a></div>
+                  <div class="card-title"><a href="#">
+                      <h3><span>Dự thi Quiz 04 của Kambria Code Challenge với tổng giải thưởng lên đến 700$</span></h3></a></div>
+                  <div class="card-description">
+                    <p>Đăng ký dự thi Quiz 04 của Kambria Code Challenge ngay hôm nay với tổng giải thưởng lên đến $700 cùng nhiều cơ hội nghề...</p>
+                  </div>
+                  <div class="foot-card"><a href="#">Read more</a><span>Today</span></div>
+                </div>
+              </li>
+              <li class="news">
+                <div class="card">
+                  <div class="card-header"><a href="#"><img src="https://topdev.vn/blog/wp-content/uploads/2020/08/Maslow-1-300x157.jpg" alt=""></a></div>
+                  <div class="card-title"><a href="#">
+                      <h3><span>Tháp nhu cầu Maslow và ứng dụng trong quản lý nhân sự</span></h3></a></div>
+                  <div class="card-description">
+                    <p>Ảnh hưởng từ đại dịch toàn cầu Covid -19, nhu cầu tuyển dụng nhân sự ngày được quan tâm hơn. Đặc biệt, sự cạnh tranh kh...</p>
+                  </div>
+                  <div class="foot-card"><a href="#">Read more</a><span>Today</span></div>
+                </div>
+              </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="bg-second">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="address"><a href="#"><img src="https://assets.topdev.vn/static/assets/desktop/images/logo-td.png" alt=""></a>
+            <p>373-375 Nguyễn Trọng Tuyển, Phường 2, Quận Tân Bình, Tp.HCM, Việt Nam</p>
+            <p>
+              Coppyright © CÔNG TY CỔ PHẦN APPLANCER
+              Liên Hệ: 028 6273 3496 - contact@applancer.net
+              ĐKKD : 031 303 2338 - Cấp ngày : 27/11/2014             
+            </p>
+          </div>
+          <div class="about">
+            <h3><strong>Về chúng tôi</strong></h3>
+            <ul>
+              <li><a href="#">Về chúng tôi</a></li>
+              <li><a href="#">Liên hệ</a></li>
+              <li><a href="#">Thỏa thuận sử dụng</a></li>
+              <li><a href="#">Cơ hội việc làm</a></li>
+              <li><a href="#">Quy định bảo mật</a></li>
+              <li><a href="#">Quy chế hoạt động của sàn giao dịch thương mại điện tử TopDev</a></li>
+              <li><a href="#">Giải quyết khiếu nại</a></li>
+            </ul>
+          </div>
+          <div class="candidate">
+            <h3><strong>Ứng viên</strong></h3>
+            <ul>
+              <li><a href="#">Tạo CV</a></li>
+              <li> <a href="#">Tìm kiếm công việc IT   </a></li>
+            </ul>
+          </div>
+          <div class="employer">
+            <h3><strong>Nhà tuyển dụng</strong></h3>
+            <ul>
+              <li><a href="#">Đăng công việc miễn phí</a></li>
+              <li> <a href="#">Tìm kiếm nhân tài</a></li>
+              <li><a href="#">Tham gia mạng lưới TopDev    </a></li>
+            </ul>
+          </div>
+          <div class="follow">
+            <h3><strong>Theo dõi chúng tôi tại</strong></h3>
+            <ul class="row">
+              <li><a href="#"><span><i class="fab fa-facebook-square"></i></span></a></li>
+              <li><a href="#"><span><i class="fab fa-linkedin"></i></span></a></li>
+              <li><a href="#"><span><i class="fab fa-youtube"></i></span></a></li>
+            </ul>
+            <h3> <strong>Chứng nhận bởi</strong></h3><a href="#"><img src="https://accounts.topdev.vn/asset/images/logo_bocongthuong.jpgx" alt=""></a>
+          </div>
+        </div>
+        <button id="top-page" onclick="backTop()"> <span></span></button>
+      </div>
+    </footer>
+  </body>
+</html>

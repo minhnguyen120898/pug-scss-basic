@@ -1,0 +1,59 @@
+- const about = ["Về chúng tôi","Liên hệ","Thỏa thuận sử dụng","Cơ hội việc làm","Quy định bảo mật","Quy chế hoạt động của sàn giao dịch thương mại điện tử TopDev","Giải quyết khiếu nại"]
+footer.bg-second
+    .container
+        .footer-wrap
+            .address
+                a(href="#")
+                    img(src="https://assets.topdev.vn/static/assets/desktop/images/logo-td.png", alt="")
+                p 373-375 Nguyễn Trọng Tuyển, Phường 2, Quận Tân Bình, Tp.HCM, Việt Nam
+                p.
+                    Coppyright © CÔNG TY CỔ PHẦN APPLANCER
+                    Liên Hệ: 028 6273 3496 - contact@applancer.net
+                    ĐKKD : 031 303 2338 - Cấp ngày : 27/11/2014             
+            .about
+                h3
+                    strong Về chúng tôi
+                ul
+                    each item in about
+                        li
+                            a(href="#")= item
+            .candidate
+                h3
+                    strong Ứng viên
+                ul
+                    li
+                        a(href="#") Tạo CV
+                    li 
+                        a(href="#") Tìm kiếm công việc IT   
+            .employer
+                h3
+                    strong Nhà tuyển dụng
+                ul
+                    li
+                        a(href="#") Đăng công việc miễn phí
+                    li 
+                        a(href="#") Tìm kiếm nhân tài
+                    li
+                        a(href="#") Tham gia mạng lưới TopDev    
+            .follow
+                h3
+                    strong Theo dõi chúng tôi tại
+                ul.row
+                    li
+                        a(href="#")
+                            span
+                                <i class="fab fa-facebook-square"></i>
+                    li
+                        a(href="#")
+                            span
+                                <i class="fab fa-linkedin"></i>
+                    li
+                        a(href="#")
+                            span
+                                <i class="fab fa-youtube"></i>
+                h3 
+                    strong Chứng nhận bởi
+                a(href="#")
+                    img(src="https://accounts.topdev.vn/asset/images/logo_bocongthuong.jpgx", alt="")
+        button#top-page(onclick="backTop()") 
+            span

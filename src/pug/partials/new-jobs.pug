@@ -1,0 +1,38 @@
+mixin col-job(src,name,location,salary,date)
+    .col-6
+        .box-jobs.clear
+            .logo-jobs
+                img(src=src, alt="")
+            .cont
+                h3.job-title= name
+                p.job-location= location
+                p.job-salary.mt
+                    span.salary= salary
+                    span.s-login
+                        a(href="#") Đăng nhập để xem mức lương 
+                        i(class="fa fa-caret-right")
+            .job-favourite
+                p
+                    i(class="far fa-star")
+            .job-ago
+                p= date
+section#newjobs
+    .content-product.bg-white
+        .inner-content
+            .top-product
+                h2 
+                    strong.title-cont Công Việc Mới Nhất
+            .list-jobs
+                .row
+                    +col-job("https://salt.topdev.vn/VBCozgan4pPlxKCF3xsAJkrBX1zUiWiKTiG7NhN2Vw8/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzAyLzIxLzE1NTk4MjI2ODg1ODEtVW50aXRsZWQuanBn/1559822688581-untitled.jpg","Lập trình viên Java(Java, Web)","Quận Ba Đình, Hà Nội","1**** USD","6 hours ago")
+                    +col-job("https://salt.topdev.vn/WxEg6yLbdWXgtz1EPheBkNoZlz1xVwOFLHGEHHOuwxE/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA2LzA0L0lNR1JPVVAtTG9nby0zWWVEMC5wbmc/imgroup-logo-3yed0.png","PHP Developer(PHP, Lavarel)","Quận 10, Hồ Chí Minh","1********* - 2********* VND","6 hours ago")
+                    +col-job("https://salt.topdev.vn/7nqlgGk-9pFwA80M4kRlD_AlTlRIzsoHP9HZnCvdjF4/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzIyL2xvZ29uSFhWRXFYRFdnN20zdG90YlFrRWYxSk95WGR2OTJqNS1kRXJTUS5wbmc/logonhxveqxdwg7m3totbqkef1joyxdv92j5-dersq.png","PHP Developer(PHP, CodeIgniter)","Quận 3, Hồ Chí Minh","1********* - 2********* VND","6 hours ago")
+                    +col-job("https://salt.topdev.vn/aWDf4J6qrAcWE-KizMewJs6lZipvHXMK82Ks2uEwu7g/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzIxL2xvZ28xY3hOWnBrRmxRNUhaM2l2R2pwSjJ2MGhlNDVJNThIaS1YVlllNi5wbmc/logo1cxnzpkflq5hz3ivgjpj2v0he45i58hi-xvye6.png","Technical Architect (ReactJS, NodeJS)(Technical Architect, NodeJS, ReactJS)","Quận Tân Bình, Hồ Chí Minh","1********* - 2********* VND","6 hours ago")
+                    +col-job("https://salt.topdev.vn/kLP13fBPUYIYp1YF8zTbnuLyCmzzpscmJykm3T7xFFo/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2Y3M2EwNzZiNjM3OThiZGI0MjE3NGVkN2JkYWU3NmFlLnBuZw/f73a076b63798bdb42174ed7bdae76ae.png","2D Designer(2D Design, UX/UI Design, Web Design)","Quận 3, Hồ Chí Minh","1**** - 1**** USD","6 hours ago")
+                    +col-job("https://salt.topdev.vn/VBCozgan4pPlxKCF3xsAJkrBX1zUiWiKTiG7NhN2Vw8/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzAyLzIxLzE1NTk4MjI2ODg1ODEtVW50aXRsZWQuanBn/1559822688581-untitled.jpg","Lập trình viên Java(Java, Web)","Quận Ba Đình, Hà Nội","1**** USD","6 hours ago")
+                    +col-job("https://salt.topdev.vn/WxEg6yLbdWXgtz1EPheBkNoZlz1xVwOFLHGEHHOuwxE/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA2LzA0L0lNR1JPVVAtTG9nby0zWWVEMC5wbmc/imgroup-logo-3yed0.png","PHP Developer(PHP, Lavarel)","Quận 10, Hồ Chí Minh","1********* - 2********* VND","6 hours ago")
+                    +col-job("https://salt.topdev.vn/7nqlgGk-9pFwA80M4kRlD_AlTlRIzsoHP9HZnCvdjF4/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzIyL2xvZ29uSFhWRXFYRFdnN20zdG90YlFrRWYxSk95WGR2OTJqNS1kRXJTUS5wbmc/logonhxveqxdwg7m3totbqkef1joyxdv92j5-dersq.png","PHP Developer(PHP, CodeIgniter)","Quận 3, Hồ Chí Minh","1********* - 2********* VND","6 hours ago")
+                    +col-job("https://salt.topdev.vn/aWDf4J6qrAcWE-KizMewJs6lZipvHXMK82Ks2uEwu7g/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzIxL2xvZ28xY3hOWnBrRmxRNUhaM2l2R2pwSjJ2MGhlNDVJNThIaS1YVlllNi5wbmc/logo1cxnzpkflq5hz3ivgjpj2v0he45i58hi-xvye6.png","Technical Architect (ReactJS, NodeJS)(Technical Architect, NodeJS, ReactJS)","Quận Tân Bình, Hồ Chí Minh","1********* - 2********* VND","6 hours ago")
+                    +col-job("https://salt.topdev.vn/kLP13fBPUYIYp1YF8zTbnuLyCmzzpscmJykm3T7xFFo/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2Y3M2EwNzZiNjM3OThiZGI0MjE3NGVkN2JkYWU3NmFlLnBuZw/f73a076b63798bdb42174ed7bdae76ae.png","2D Designer(2D Design, UX/UI Design, Web Design)","Quận 3, Hồ Chí Minh","1**** - 1**** USD","6 hours ago")
+
+

@@ -1,0 +1,79 @@
+- const classes = ['header_main','bg-secondary']
+- const listLink = ["Tìm việc IT","Sự kiện","Cuộc sống IT","Chuyện nghề HR","Tạo CV","Thị trường IT","TopDev x HackerRank"]
+- const listSubLink = ["Vietnam Mobile Day","Vietnam Web Submit","TopDev TechTalk"]
+- const s1 = ["Intership","Fresher","Developer","Leader","Manager","CTO"]
+- const s2 = ["Hồ Chí Minh","Hà Nội","Đà Nẵng","Cần Thơ","Other","Oversea"]
+- const s3 = ["Full-time","Part-time","Freelance","Remote","Oversea"]
+- const s4 = ["2-10","11-50","51-200","201-500","501-1000","1000+"]
+- const s5 = ["< $300","$300 - $500","$500 - $700","$700 - $1000","$1000 - $1200","$1200 - $1500","$1500 - $2000","> $2000"]
+- const s6 = ["Accounting","Advertising/Media","Argriculture","Automotive","Banking","Business Services","Computer Hardware","Computer Software","Internet","Law Enforcement","Leisure, Travel &amp; Tourism","Logistics, Transportation &amp; Supply Chain","E-Commerce/ Retail","Education/E-Learning","Entertainment/Game","Food &amp; Beverage","Health, Beauty and Fitness","Energy","Fintech","Human Resource","Manufacturing","Outsourcing/Offshoring","Telecommunications","Other"]
+- const s7 = ["Job Posting","Job Ad","D.I.R","TopDev Premium","Employer Branding","TopDev Reward","IT Market Report"]
+mixin sideList(name,items)
+    .side-list
+        a(href="#")
+            h3= name
+        .wrap-ul
+            ul
+                each item in items
+                    li
+                        a(href="#")= item
+            if block
+                block               
+div#header_main(class=classes)
+    header.header-sticky
+      .inner
+        .wrap-menu-dropdown
+            .btn-menu
+                <i class="fas fa-bars"></i>
+            .menu-list-dropdown
+                .list
+                    .side
+                        dl
+                            dt 1263
+                            dd 
+                                a(href="#") IT Jobs
+                        dl
+                            dt  2656
+                            dd
+                                a(href="#") IT Companies            
+                    .side.side2
+                        +sideList("By Jobs Level",s1)
+                        +sideList("By Location",s2)
+                        +sideList("By Job Type/Company Size",s3)
+                            ul
+                                each item in s4
+                                    li
+                                        a(href="#")= item   
+                        +sideList("By Salary Range",s5)             
+                    .side.side3
+                        +sideList("By Industry",s6)
+                    .side.side3
+                        +sideList("TopDev",s7)
+        nav 
+            ul.nav-menu
+                li.main-link
+                    ul
+                        each item,i in listLink
+                            li
+                                a(href="#")= item
+                li.main-button
+                    ul.group-button
+                        li
+                            a(href="#").btn-login
+                                span Đăng Nhập
+                        li
+                            a(href="#").btn-pushjob
+                                span Đăng tuyển 
+                                    i(class="fa fa-arrow-right")
+                form(method="get" action="#")
+                    li.search-bar
+                        .key-searchbar
+                            input(type="text" placeholder="Nhập từ khóa của bạn")
+                  
+
+
+
+
+
+    
+    
