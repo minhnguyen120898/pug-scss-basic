@@ -1,24 +1,20 @@
-.content-product{
-    @include content-product(40px 0 0 0);
-}
-.bg-white{
-    background-color: white;
-}
-.list-jobs {
-    position: relative;
-    margin-top: 20px;
-    padding: 7px 15px 0;
-    margin-bottom: 48px;
-}
-.box-jobs{
-    border: 1px solid #e1e1e1;
-    padding: 12px;
-    overflow: hidden;
-    position: relative;
-    background-color: white;
-    margin-bottom: 4px;
-    z-index: 1;
-    .logo-jobs {
+.newjobs{
+    &__list-jobs {
+        position: relative;
+        margin-top: 20px;
+        padding: 7px 0 0;
+        margin-bottom: 48px;
+    }
+    &__box-jobs{
+        border: 1px solid #e1e1e1;
+        padding: 12px;
+        overflow: hidden;
+        position: relative;
+        background-color: white;
+        margin-bottom: 4px;
+        z-index: 1;       
+    }
+    &__logo-jobs {
         width: 120px;
         height: 82px;
         position: relative;
@@ -33,58 +29,49 @@
             cursor: pointer;
         }
     }
-    .job-ago {
+    &__job-ago {
         position: absolute;
         color: royalblue;
         bottom: 12px;
         right: 12px;
     }
-}
-.cont {
-    padding-left: 11px;
-    float: left;
-    width: 75%;
-    position: relative;
-    overflow: hidden;
-    h3{
-        margin: 0;
-    }
-    .job-title{
-        font-weight: 600;
-        font-size: 15px;
-        display: block;
+    &__cont {
+        padding-left: 11px;
+        float: left;
+        width: 75%;
+        position: relative;
         overflow: hidden;
-        white-space: nowrap;
+        h3{
+            margin: 0;
+        }
+        &__job-title{
+            font-weight: 600;
+            font-size: 15px;
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        &__job-location{
+            margin: 0;
+        }
     }
-    .job-location{
-        margin: 0;
+    
+    &__job-favourite{
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        font-size: 18px;
     }
-}
-
-.mt{
-    margin-top: 17px;
-}
-.job-favourite{
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    font-size: 18px;
-}
-
-.box-jobs::before{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";   
-}
-.box-jobs:hover::before{
-    transition: 1s;
-    background-color: #f8cfcd;
-}
-.clear::after{
-    clear: both;
-    content: "";
-    display: block;
+    &__box-jobs::before{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";   
+    }
+    &__box-jobs:hover::before{
+        transition: 1s;
+        background-color: #f8cfcd;
+    }
 }

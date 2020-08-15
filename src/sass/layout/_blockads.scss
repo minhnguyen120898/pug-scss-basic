@@ -1,26 +1,26 @@
-#blockads{
-
-.inner {
-    width: 1260px;
-    position: relative;
-    margin: 0 auto 48px;
-    overflow: hidden;
-}
-.wrap-items{
-    width: 500%;
-    position: relative;
-    margin: 0;
-    left: 0;
-    animation: slide3 10s infinite;
-    .items{
-        width: 20%;
-        float: left;
-    }
-    img{
+.blockads{
+    &__inner {
         width: 1260px;
-        height: auto;
+        position: relative;
+        margin: 0 auto 48px;
+        overflow: hidden;
+    &__wrap-items{
+        width: 500%;
+        position: relative;
+        margin: 0;
+        left: 0;
+        animation: slide3 10s infinite;
+        .items{
+            width: 20%;
+            float: left;
+        }
+        img{
+            width: 1260px;
+            height: auto;
+        }
     }
 }
+
 @keyframes slide3 {
     0% {
         left:0;

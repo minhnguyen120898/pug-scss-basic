@@ -1,5 +1,7 @@
-@import '../sass/base/global';
+@import '../sass/base/variables';
 @import '../sass/mix/mix';
+@import '../sass/base/global';
+@import '../sass/component/card';
 @import '../sass/layout/wrap-ads';
 @import '../sass/layout/header';
 @import '../sass/layout/search';

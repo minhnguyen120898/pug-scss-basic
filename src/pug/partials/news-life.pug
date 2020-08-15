@@ -1,5 +1,5 @@
 mixin card(src,title,cont)
-    li.news
+    li.news-life__item
         .card
             .card-header
                 a(href="#")
@@ -13,12 +13,12 @@ mixin card(src,title,cont)
             .foot-card
                 a(href="#") Read more
                 span Today
-section#news-life
-    .content
-        .title-cont
+section#news-life.news-life
+    .news-life__wrap
+        .news-life__title
             h2
-                strong.tit-cont Cuộc Sống IT
-        ul.wrap-news
+                strong Cuộc Sống IT
+        ul.news-life__content
             +card("https://topdev.vn/blog/wp-content/uploads/2020/08/hacking-300x157.jpg","Top 10 lỗ hổng bảo mật ứng dụng Web 2020 (OWASP) (Phần 1)","Tác giả: Bui Xuan Huy B Top 10 OWASP có lẽ không phải khái niệm xa lạ gì với những người tìm hiểu về An toàn thông tin,...")
             +card("https://topdev.vn/blog/wp-content/uploads/2020/08/boyans-300x157.jpg","Sử dụng useMemo và useCallback trong việc tối ưu code – ReactJS","Tác giả: Duc Minh Pham Trong bài viết lần này, chúng ta sẽ làm rõ về việc sử dụng useMemo useMemo và useCallback để tối...")
             +card("https://topdev.vn/blog/wp-content/uploads/2020/08/boxmodelasv-300x157.jpg","CSS Box Model – Các cách hiển thị element với thuộc tính display","Mở đầu Đây là bài viết cuối trong series về CSS Box Model của mình. Nếu như các bài viết trước tập trung phân tích sâu ...")

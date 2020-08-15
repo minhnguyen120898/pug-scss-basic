@@ -1,68 +1,23 @@
-#news-life{
+.news-life{
     position: relative;
     width: 1260px;
     margin: 0 auto;
     margin-bottom: 48px;
     line-height: 18px;
     font-size: 14px;
-    .title-cont {
+    &__title {
         @include title-cont(black);
     }
-    .wrap-news{
+    &__content{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-between;
     }
-    .news {
+    &__item {
         flex: 0 0 20%;
         width: 20%;
         padding: 5px;
         margin: 0 auto;
-    }
-    .card {
-        display: inline-block;      
-        overflow: hidden;
-        .card-header{
-            border: 1px solid #d2d3d3;
-            padding: 20px 0;
-        }
-        img {
-            @include image(cover);
-        }
-        .card-title {
-            overflow: hidden;
-            margin-top: 8px;
-            font-size: 14px;
-            height: 50px;
-            font-weight: 400;
-            line-height: 1.53;
-            letter-spacing: -.5px;
-            text-overflow: ellipsis;
-            h3{
-                margin: 0;
-            }
-            a {
-                color: #212121;
-            }
-            span{
-                @include font();
-            }
-        }
-        .card-description {
-            text-align: justify;
-            line-height: 24px;
-            color: #444;
-        }
-        .foot-card{
-            font-size: 11px;
-            a {
-                color: red;
-            }
-            span {
-                float: right;
-                opacity: 0.6;
-            }
-        }
     }
 }

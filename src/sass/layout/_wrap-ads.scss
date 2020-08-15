@@ -50,15 +50,15 @@
             text-decoration: none;
             padding-right: 10px;
         }
+        &__contacts {
+            list-style: none;
+            margin-bottom: 0;
+            margin-top: 25px;
+            width: 100%;
+            align-self: center;       
+        }
     }
-    .bar_contacts {
-        list-style: none;
-        margin-bottom: 0;
-        margin-top: 25px;
-        width: 100%;
-        align-self: center;       
-    }
-    
+      
     a:hover {
         color: red;
     }
