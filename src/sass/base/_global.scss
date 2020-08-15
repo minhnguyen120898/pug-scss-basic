@@ -70,6 +70,60 @@ a {
   flex: 0 0 75%;
   max-width: 75%;
 }
+.flr{
+  float: right;}
+.clear {
+  position: relative;
+}
+.clear::after{
+  clear: both;
+  content: "";
+  display: block;
+}
+.bg-white{
+  background-color: white;
+}
+.bg-second{
+  background-color: #efefef;
+}
+.mt{
+  margin-top: 17px;
+}
+.arrow-right {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  right:0;
+  transform: translate(-50%,-50%);
+  span {
+      display: block;
+      height: 10px;
+      width: 10px;
+      border-bottom: 3px solid $my-color-orange;
+      border-right: 3px solid $my-color-orange;
+      transform: rotate(-45deg);
+      animation: animate 2s infinite;
+  }
+  @keyframes animate {
+      0%{
+          opacity: 0;
+          transform: rotate(-45deg) translate(-10px,-10px);
+      }
+      50%{
+          opacity: 1;
+      }
+      100%{
+          opacity: 0;
+          transform: rotate(-45deg) translate(10px,10px);
+      }
+  }
+}
+.arrow-right span:nth-child(1){
+  animation-delay: -0.4s;
+}
+.arrow-right span:nth-child(2){
+  animation-delay: -0.2s;
+}
 @font-face {
     font-family: 'icomoon';
     src:  url('../assets/fonts/icomoon.eot');

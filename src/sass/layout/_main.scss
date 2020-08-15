@@ -3,7 +3,7 @@
     line-height: 21px;
 }
 
-#content-slider{
+.main{
     display: flex;
     width: 1260px;
     height: 390px;
@@ -11,43 +11,52 @@
     input[type=radio]{
         display: none;
     }
-    .main-slide {
-        max-width: 800px;
-        width: 100%;
-        float: left;
-    }
     label {
         cursor:pointer;
         text-decoration: none;
     }
-    .main-item-slide{
+    &__title {
+        h3 {
+            @extend %style-h3;
+            font-weight: 700;
+        }
+        span {
+            color:$my-color-orange;
+        }
+    }
+    &__slide {
+        max-width: 800px;
+        width: 100%;
+        float: left;
+    }
+    &__wrap-slide{
         background: #fff;
         position: relative;
         z-index: 2;
     }
-    .overflow {
+    &__overflow {
         width: 100%;
         overflow: hidden;
     }
-    .inner {
+    &__inner {
         transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
         width: 400%;
         height: 300px;
     }
-    #slide1:checked ~ .main-item-slide .inner {
+    #slide1:checked ~ &__wrap-slide &__inner {
         margin-left: 0;
     }
-    #slide2:checked ~ .main-item-slide .inner {
+    #slide2:checked ~ &__wrap-slide &__inner {
         margin-left: -100%;
     }
-    #slide3:checked ~ .main-item-slide .inner {
+    #slide3:checked ~ &__wrap-slide &__inner {
         margin-left: -200%;
     }
-    #slide4:checked ~ .main-item-slide .inner {
+    #slide4:checked ~ &__wrap-slide &__inner {
         margin-left: -300%;
     }
     
-    .slide {
+    &__slide-item {
         display: flex;
         width: 25%;
         float:left;
@@ -55,7 +64,7 @@
         align-items: center;
         height: 100%;
     }
-    .content-slide{
+    &__content-slide{
         padding:0 20px;
         height: 90%;
         align-self: center;
@@ -68,7 +77,7 @@
             margin-top: 0;
         }
     }
-    .foot-slide {
+    &__foot-slide {
         position: absolute;
         bottom: 0;
         left:20px;
@@ -105,36 +114,27 @@
         margin: 0 -50px 0 0;
         display: block;
     }
-    // #bullets {
-    //     margin: 150px 0 0;
-    //     text-align: center;
-    // }
-    // #bullets label {
-    //     display: inline-block;
-    //     width: 10px;
-    //     height: 10px;
-    //     border-radius:100%;
-    //     background: #ccc;
-    //     margin: 0 10px;
-    // }
-    // #slide1:checked ~ #bullets label:nth-child(1),
-    // #slide2:checked ~ #bullets label:nth-child(2),
-    // #slide3:checked ~ #bullets label:nth-child(3),
-    // #slide4:checked ~ #bullets label:nth-child(4) {
-    //     background: #444;
-    // }
-}
-#content-slider .title-slide{
-    h3 {
-        @extend %style-h3;
-        font-weight: 700;
+    #bullets {
+        margin: 140px 0 0;
+        text-align: center;
     }
-    span {
-        color:$my-color-orange;
+    #bullets label {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius:100%;
+        background: #ccc;
+        margin: 0 10px;
     }
-}
-#content-slider {
-    .main-thumb {
+    #slide1:checked ~ #bullets label:nth-child(1),
+    #slide2:checked ~ #bullets label:nth-child(2),
+    #slide3:checked ~ #bullets label:nth-child(3),
+    #slide4:checked ~ #bullets label:nth-child(4) {
+        background: #444;
+    }
+    // end slide
+
+    &__thumb {
         margin-right: 30px;
         margin-top: 35px;
         align-self: center;
@@ -149,61 +149,8 @@
             object-fit: contain;
         }
     }
-    .wrap-hot-jobs {
-        width: 30%;
-        .slide-hot-jobs {
-            width: 100%;
-            height: 276px;
-            box-sizing: content-box;
-            margin: 33px 0 0 0;
-            border: 1px solid #e1e1e1;
-        }
-        .overflow2 {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        .wrap-info-item{
-            position: relative;
-            height: 100%;
-            margin: 0;
-            left: 0;
-            width: 500%;
-            animation: slide 20s infinite;
-        }
-        @keyframes slide {
-            0% {
-                left: 0;
-            }
-            20% {
-                left: 0;
-            }
-            25% {
-                left: -100%;
-            }
-            45% {
-                left: -100%;
-            }
-            50% {
-                left: -200%;
-            }
-            70%{
-                left: -200%;
-            }
-            75%{
-                left: -300%;
-            }
-            95%{
-                left: -300%;
-            }
-            100%{
-                left: -400%;
-            }
-        }
-        .item {
-            width: 20%;
-            float: left;
-        }
+    &__side-slide {
+        width: 30%; 
         ul{
             height: 100%;
             display: flex;
@@ -214,19 +161,6 @@
             padding: 10px 0 0 10px;
             vertical-align: middle;
             height: 33.33%;
-        }
-        .jobs-company {
-            color: #999;
-            font-size: 14px;
-            font-weight: 700;
-            margin: 0 0 4px;
-        }
-        .jobs-name {
-            position: relative;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 17px;
-            margin:  0 0 4px;
         }
         .icon-star-empty::after{
             position: absolute;
@@ -246,5 +180,70 @@
             margin-left: 3px;
         }
     }
+    &__third-slide {
+        width: 100%;
+        height: 276px;
+        box-sizing: content-box;
+        margin: 33px 0 0 0;
+        border: 1px solid #e1e1e1;
+    }
+    &__overflow2 {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    &__wrap-items{
+        position: relative;
+        height: 100%;
+        margin: 0;
+        left: 0;
+        width: 500%;
+        animation: slide 15s infinite;
+    }
+    &__item{
+        width: 20%;
+        float: left;
+    }
+    @keyframes slide {
+        0% {
+            left: 0;
+        }
+        20% {
+            left: 0;
+        }
+        25% {
+            left: -100%;
+        }
+        45% {
+            left: -100%;
+        }
+        50% {
+            left: -200%;
+        }
+        70%{
+            left: -200%;
+        }
+        75%{
+            left: -300%;
+        }
+        95%{
+            left: -300%;
+        }
+        100%{
+            left: -400%;
+        }
+    }
+    &__jobs-company {
+        color: #999;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0 0 4px;
+    }
+    &__jobs-name {
+        position: relative;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 17px;
+        margin:  0 0 4px;
+    }
 }
-

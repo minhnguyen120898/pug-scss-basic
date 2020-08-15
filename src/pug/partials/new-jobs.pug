@@ -1,28 +1,28 @@
 mixin col-job(src,name,location,salary,date)
     .col-6
-        .box-jobs.clear
-            .logo-jobs
+        .newjobs__box-jobs.clear
+            .newjobs__logo-jobs
                 img(src=src, alt="")
-            .cont
-                h3.job-title= name
-                p.job-location= location
-                p.job-salary.mt
-                    span.salary= salary
-                    span.s-login
+            .newjobs__cont
+                h3.newjobs__cont__job-title= name
+                p.newjobs__cont__job-location= location
+                p.newjobs__cont__job-salary.mt
+                    span.main-content__wrap__salary= salary
+                    span.main-content__wrap__s-login
                         a(href="#") Đăng nhập để xem mức lương 
                         i(class="fa fa-caret-right")
-            .job-favourite
+            .newjobs__job-favourite
                 p
                     i(class="far fa-star")
-            .job-ago
+            .newjobs__job-ago
                 p= date
-section#newjobs
-    .content-product.bg-white
-        .inner-content
-            .top-product
+section#newjobs.newjobs
+    .main-content__wrap.bg-white
+        .main-content__inner
+            .main-content__top-product
                 h2 
-                    strong.title-cont Công Việc Mới Nhất
-            .list-jobs
+                    strong.main-content__top-product__title-cont Công Việc Mới Nhất
+            .newjobs__list-jobs
                 .row
                     +col-job("https://salt.topdev.vn/VBCozgan4pPlxKCF3xsAJkrBX1zUiWiKTiG7NhN2Vw8/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzAyLzIxLzE1NTk4MjI2ODg1ODEtVW50aXRsZWQuanBn/1559822688581-untitled.jpg","Lập trình viên Java(Java, Web)","Quận Ba Đình, Hà Nội","1**** USD","6 hours ago")
                     +col-job("https://salt.topdev.vn/WxEg6yLbdWXgtz1EPheBkNoZlz1xVwOFLHGEHHOuwxE/fit/120/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA2LzA0L0lNR1JPVVAtTG9nby0zWWVEMC5wbmc/imgroup-logo-3yed0.png","PHP Developer(PHP, Lavarel)","Quận 10, Hồ Chí Minh","1********* - 2********* VND","6 hours ago")

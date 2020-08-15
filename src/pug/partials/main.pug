@@ -1,4 +1,4 @@
-- const cl = ["jobs-name","icon-star-empty"]
+- const cl = ["main__jobs-name","icon-star-empty"]
 mixin label
     label(for="slide1")
     label(for="slide2")
@@ -6,35 +6,35 @@ mixin label
     label(for="slide4")
 mixin jobs(head,name,a)
     li(style!=attributes.style)
-        p.jobs-company= head
+        p.main__jobs-company= head
         p(class=cl)= name 
         a(href="#")= a
         i(class="fa fa-caret-right")
 mixin slides(src,name,count)
-    .slide(class!=attributes.class)
+    .main__slide-item(class!=attributes.class)
         img(src=src, alt="")
-        .content-slide
+        .main__content-slide
             h3= name
             if block
                 block
             else
                 p No content provided    
-            .foot-slide
+            .main__foot-slide
                 p= count
                    <i class="fas fa-arrow-right"></i>
                 p <i class="far fa-star"></i>
-section#content-slider
-        .main-slide
-            .title-slide
+section#main.main
+        .main__slide
+            .main__title
                 h3  
                     <span>Công ty</span> nổi bật
             input(type="radio" name="slider" id="slide1" checked)
             input(type="radio" name="slider" id="slide2")
             input(type="radio" name="slider" id="slide3")
             input(type="radio" name="slider" id="slide4")    
-            .main-item-slide
-                .overflow
-                    .inner                       
+            .main__wrap-slide
+                .main__overflow
+                    .main__inner                       
                         +slides("./assets/images/company.jpg","Công Ty CP Tin học Lạc Việt","2 jobs ")(class="slide_1")
                                 p.
                                     Thành lập ngày 03/02/1994, đến nay Cty CP Tin học Lạc Việt đã trở thành...
@@ -66,38 +66,38 @@ section#content-slider
                 +label
             #bullets
                 +label                  
-        .main-thumb
-            ul.nav-slide
+        .main__thumb
+            ul.main__second-slide
                 li(style={"border-bottom":"1px solid #e1e1e1"})                    
                     img(src="./assets/images/company1.png", alt="")
                 li(style={"border-bottom":"1px solid #e1e1e1"})
                     img(src="./assets/images/company2.png", alt="")
                 li 
                     img(src="./assets/images/company3.png", alt="")
-        .wrap-hot-jobs
-            .title-slide
+        .main__side-slide
+            .main__title
                 h3  
                     <span>Công Việc</span> Hot Hôm Nay
-            .slide-hot-jobs   
-                .overflow2    
-                    .wrap-info-item
-                        ul.item
+            .main__third-slide
+                .main__overflow2    
+                    .main__wrap-items
+                        ul.main__item
                             +jobs("HEAD CAPITAL","Graphic Design","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
                             +jobs("Công Ty CP Tin học Lạc Việt","Kiểm Tra Chất Lượng Phần Mềm (Tester)","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
                             +jobs("Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)",".Net Back-End Developer","Đăng nhập để xem mức lương")
-                        ul.item
+                        ul.main__item
                             +jobs("HEAD CAPITAL","Graphic Design","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
                             +jobs("Công Ty CP Tin học Lạc Việt","Kiểm Tra Chất Lượng Phần Mềm (Tester)","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
                             +jobs("Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)",".Net Back-End Developer","Đăng nhập để xem mức lương")
-                        ul.item
+                        ul.main__item
                             +jobs("HEAD CAPITAL","Graphic Design","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
                             +jobs("Công Ty CP Tin học Lạc Việt","Kiểm Tra Chất Lượng Phần Mềm (Tester)","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
                             +jobs("Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)",".Net Back-End Developer","Đăng nhập để xem mức lương")    
-                        ul.item
+                        ul.main__item
                             +jobs("HEAD CAPITAL","Graphic Design","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
                             +jobs("Công Ty CP Tin học Lạc Việt","Kiểm Tra Chất Lượng Phần Mềm (Tester)","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
                             +jobs("Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)",".Net Back-End Developer","Đăng nhập để xem mức lương")
-                        ul.item
+                        ul.main__item
                             +jobs("HEAD CAPITAL","Graphic Design","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
                             +jobs("Công Ty CP Tin học Lạc Việt","Kiểm Tra Chất Lượng Phần Mềm (Tester)","Đăng nhập để xem mức lương")(style={"border-bottom":"1px solid #e1e1e1"})
                             +jobs("Công Ty Cổ Phần Công Nghệ TK 25 (gannha.com)",".Net Back-End Developer","Đăng nhập để xem mức lương")                

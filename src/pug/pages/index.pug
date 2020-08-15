@@ -12,11 +12,13 @@ html
             script(src="./js/script.js")
     body
         include ../partials/wrap-ads
-        include ../partials/header
+        block header
+            include ../partials/header
         include ../partials/search
         include ../partials/main
         include ../partials/main-content
         include ../partials/new-jobs
         include ../partials/blockads
         include ../partials/news-life
-        include ../partials/footer
+        block footer
+            include ../partials/footer

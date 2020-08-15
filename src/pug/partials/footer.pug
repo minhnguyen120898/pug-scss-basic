@@ -2,7 +2,7 @@
 footer.bg-second
     .container
         .footer-wrap
-            .address
+            .footer-wrap__address
                 a(href="#")
                     img(src="https://assets.topdev.vn/static/assets/desktop/images/logo-td.png", alt="")
                 p 373-375 Nguyễn Trọng Tuyển, Phường 2, Quận Tân Bình, Tp.HCM, Việt Nam
@@ -10,14 +10,14 @@ footer.bg-second
                     Coppyright © CÔNG TY CỔ PHẦN APPLANCER
                     Liên Hệ: 028 6273 3496 - contact@applancer.net
                     ĐKKD : 031 303 2338 - Cấp ngày : 27/11/2014             
-            .about
+            .footer-wrap__about
                 h3
                     strong Về chúng tôi
                 ul
                     each item in about
                         li
                             a(href="#")= item
-            .candidate
+            .footer-wrap__candidate
                 h3
                     strong Ứng viên
                 ul
@@ -25,7 +25,7 @@ footer.bg-second
                         a(href="#") Tạo CV
                     li 
                         a(href="#") Tìm kiếm công việc IT   
-            .employer
+            .footer-wrap__employer
                 h3
                     strong Nhà tuyển dụng
                 ul
@@ -35,7 +35,7 @@ footer.bg-second
                         a(href="#") Tìm kiếm nhân tài
                     li
                         a(href="#") Tham gia mạng lưới TopDev    
-            .follow
+            .footer-wrap__follow
                 h3
                     strong Theo dõi chúng tôi tại
                 ul.row

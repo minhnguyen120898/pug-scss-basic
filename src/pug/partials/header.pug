@@ -9,10 +9,10 @@
 - const s6 = ["Accounting","Advertising/Media","Argriculture","Automotive","Banking","Business Services","Computer Hardware","Computer Software","Internet","Law Enforcement","Leisure, Travel &amp; Tourism","Logistics, Transportation &amp; Supply Chain","E-Commerce/ Retail","Education/E-Learning","Entertainment/Game","Food &amp; Beverage","Health, Beauty and Fitness","Energy","Fintech","Human Resource","Manufacturing","Outsourcing/Offshoring","Telecommunications","Other"]
 - const s7 = ["Job Posting","Job Ad","D.I.R","TopDev Premium","Employer Branding","TopDev Reward","IT Market Report"]
 mixin sideList(name,items)
-    .side-list
+    .header__side-list
         a(href="#")
             h3= name
-        .wrap-ul
+        .header__wrap-ul
             ul
                 each item in items
                     li
@@ -20,14 +20,14 @@ mixin sideList(name,items)
             if block
                 block               
 div#header_main(class=classes)
-    header.header-sticky
-      .inner
-        .wrap-menu-dropdown
-            .btn-menu
+    header.header
+      .header__inner
+        .header__wrap-menu-dropdown
+            .header__btn-menu
                 <i class="fas fa-bars"></i>
-            .menu-list-dropdown
-                .list
-                    .side
+            .header__menu-list-dropdown
+                .header__list
+                    .header__side
                         dl
                             dt 1263
                             dd 
@@ -36,7 +36,7 @@ div#header_main(class=classes)
                             dt  2656
                             dd
                                 a(href="#") IT Companies            
-                    .side.side2
+                    .header__side.header__side2
                         +sideList("By Jobs Level",s1)
                         +sideList("By Location",s2)
                         +sideList("By Job Type/Company Size",s3)
@@ -45,29 +45,29 @@ div#header_main(class=classes)
                                     li
                                         a(href="#")= item   
                         +sideList("By Salary Range",s5)             
-                    .side.side3
+                    .header__side.header__side3
                         +sideList("By Industry",s6)
-                    .side.side3
+                    .header__side.header__side3
                         +sideList("TopDev",s7)
-        nav 
-            ul.nav-menu
-                li.main-link
+        nav.header__nav 
+            ul.header__nav-menu
+                li.header__nav-link
                     ul
                         each item,i in listLink
                             li
                                 a(href="#")= item
-                li.main-button
-                    ul.group-button
+                li.header__nav-button
+                    ul.header__group-button
                         li
-                            a(href="#").btn-login
+                            a(href="#").header__btn-login
                                 span Đăng Nhập
                         li
-                            a(href="#").btn-pushjob
+                            a(href="#").header__btn-pushjob
                                 span Đăng tuyển 
                                     i(class="fa fa-arrow-right")
                 form(method="get" action="#")
-                    li.search-bar
-                        .key-searchbar
+                    li.header__search-bar
+                        .header__search-bar__key
                             input(type="text" placeholder="Nhập từ khóa của bạn")
                   
 

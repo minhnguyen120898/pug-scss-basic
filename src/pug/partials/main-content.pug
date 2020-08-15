@@ -15,104 +15,104 @@
 - const array8 = ["Ký hợp đồng lao động, hưởng 12 ngày phép năm và các ngày nghỉ lễ, tết theo quy định của nhà nước","Review tăng lương","Lương tháng 13"]
 
 mixin salary-link
-    p.salary
-        span.s-login
+    p.main-content__wrap__salary
+        span.main-content__wrap__s-login
             a(href="#") Đăng nhập để xem mức lương 
             i(class="fa fa-caret-right")
 mixin salary(salary)
-    p.salary
+    p.main-content__wrap__salary
         i(class="fas fa-dollar-sign")
-        span.s-salary= salary
-        span.s-login
+        span.main-content__wrap__s-salary= salary
+        span.main-content__wrap__s-login
             a(href="#") Đăng nhập để xem mức lương 
             i(class="fa fa-caret-right")
 mixin product-item(src,name,address,jobs,array)
-    li.product-items
-        .box-product
+    li.main-content__product-items
+        .main-content__box-product
             a(href="#")
-            span.product-logo
+            span.main-content__box-product__product-logo
                 img(src=src, alt="")
             h3
-                strong.name-product= name
+                strong.main-content__box-product__name-product= name
             .row
-                .col-12.pos-rel
+                .col-12.main-content__box-product__pos-rel
                     if block
                         block
                 .col-8
-                    p.address= address
-                .col-4.side.job-ago= jobs                                        
-            .row.top-benefits
+                    p.main-content__wrap__address= address
+                .col-4.main-content__box-product__side.main-content__box-product__job-ago= jobs                                        
+            .row.main-content__box-product__top-benefits
                 .col-12
                     ul
                         ul
                             each item in array
                                 li
                                     span.txt= item
-            em.product_desc.open
+            em.main-content__box-product__product_desc.main-content__box-product__open
 mixin prodItem-min(src,name,array,address,jobs,array1)
-    li.product-items
-        .box-product
+    li.main-content__product-items
+        .main-content__box-product
             a(href="#")
-            span.product-logo
+            span.main-content__box-product__product-logo
                 img(src=src, alt="")
             h3
-                strong.name-product= name
+                strong.main-content__box-product__name-product= name
             .row
                 .col-9
-                    .job-bottom
-                        .tag-list
+                    .main-content__min-listProd__job-bottom
+                        .main-content__min-listProd__tag-list
                             each item in array
                                 a(href="#")
                                     span= item
-                .col-3.side
+                .col-3.main-content__box-product__side
                     p 
                         i(class="far fa-star")
             .row
                 .col-9
-                    p.address= address
-                .col-3.side= jobs                                        
-            .row.top-benefits
+                    p.main-content__wrap__address= address
+                .col-3.main-content__box-product__side= jobs                                        
+            .row.main-content__box-product__top-benefits
                 .col-12
                     ul
                         each item in array1
                             li
                                 span.txt= item
-            em.product_desc.open
-section#main-content
-    .content-product
-        .inner-content
-            .top-product
+            em.main-content__box-product__product_desc.main-content__box-product__open
+section#main-content.main-content
+    .main-content__wrap
+        .main-content__inner
+            .main-content__top-product
                 h2
-                    strong.title-cont Các Công Ty Phổ Biến
-                    span.flr.wrap-link
+                    strong.main-content__top-product__title-cont Các Công Ty Phổ Biến
+                    span.flr.main-content__top-product__wrap-link
                         a(href="#") Làm việc tại công ty IT Hàn Quốc
                         .arrow-right
                             span
                             span
                             span
-            ul.list-product
-                li.product-items
-                    .box-product
-                        a(href="#").link-product
-                        span.product-logo
+            ul.main-content__list-product
+                li.main-content__product-items
+                    .main-content__box-product
+                        a(href="#").main-content__box-product__link-product
+                        span.main-content__box-product__product-logo
                             img(src="https://salt.topdev.vn/LPfxXHDzfE69AuodQEm99HJFTgABEH3llCKQQdFAipw/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA4LzAzL2xvZ28taXQtb2NtcC1BZHFSeC5wbmc/logo-it-ocmp-adqrx.png", alt="")
                         h3
-                            strong.name-product Korean IT Companies    
+                            strong.main-content__box-product__name-product Korean IT Companies    
                         .row
                             .col-9
-                            .col-3.side
+                            .col-3.main-content__box-product__side
                                 p
                                     <i class="far fa-star"></i>
                         .row
                             .col-9
-                                p.address Hồ Chí Minh, Hà Nội
-                            .col-3.side
+                                p.main-content__wrap__address Hồ Chí Minh, Hà Nội
+                            .col-3.main-content__box-product__side
                                 a(href="#") Tiếp                              
                                     i(class="fa fa-arrow-right")
-                        .row.top-benefits
+                        .row.main-content__box-product__top-benefits
                             .col-12
                                 ul
-                        em.product_desc.open
+                        em.main-content__box-product__product_desc.main-content__box-product__open
                             |Korean IT Companies came to Vietnam with the mission of connecting Vietnamese Developers with Korean technology. 
                             |Through that, Korean IT Companies wish to give the IT Talents in Vietnam the opportunity to experience an international and professional working environment to maximize their careers. 
                             |Korean IT Companies believe that, with the opportunities that we will bri...
@@ -147,12 +147,12 @@ section#main-content
                 +product-item("https://salt.topdev.vn/LrfcwEjKRYMzdR3U0aYTC-6EEP1WIwyOpC7_39HLvCo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ZpbGVzL2xvZ29zL2ZjUXR0YXhGSVhSNmwyR1lEdlAzLnBuZw/fcqttaxfixr6l2gydvp3.png","QA Engineer (Tester)","Quận Tây Hồ, Hà Nội","2 ngày trước",arr4)
                     +salary("5** - 1**** USD")
             .clear
-    .content-product
-        .inner-content     
-                .top-product
+    .main-content__wrap
+        .main-content__inner   
+                .main-content__top-product
                     h2
-                        strong.title-cont Các Công Ty Nổi Bật
-                ul.list-product.min-listProd
+                        strong.main-content__top-product__title-cont Các Công Ty Nổi Bật
+                ul.main-content__list-product.main-content__min-listProd
                     +prodItem-min("https://salt.topdev.vn/lZ3MvKIaAIQHdpNto41BhpRvNDfy6eyL_r5otcXa5FI/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA1LzExL25sc2RBbDNaclJVTTJPck0zbEtTb3Jya21Jdlh6aDdhLmpwZw/nlsdal3zrrum2orm3lksorrkmivxzh7a.jpg","VNIB TECH Co. Ltd",array1,"Quận Tân Bình, Hồ Chí Minh","6 jobs",array2)
                     +prodItem-min("https://salt.topdev.vn/b4l9WXMW6NI12A1pl5KoWZNS_1MlqGGaVvjfrEpWVgo/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA0LzIzLzdneERxeTZOd3ptdkZoNzJkcmFqUDNHSHhUMzZFaEw4LmpwZw/7gxdqy6nwzmvfh72drajp3ghxt36ehl8.jpg","Prudential",array3,"Quận 1, Quận 8","4 jobs",array4)
                     +prodItem-min("https://salt.topdev.vn/EL_WfCL92d3SUO918hc3l2D4UTnQa4mTisnasZKxm6g/fit/200/0/ce/1/aHR0cHM6Ly9hc3NldHMudG9wZGV2LnZuL2ltYWdlcy8yMDIwLzA3LzE2LzgyZDg0Njk3MDc3ZjY2YWQzNTZmYzdmNzNiNWVjNDQ4LVpqYzJ3LnBuZw/82d84697077f66ad356fc7f73b5ec448-zjc2w.png","LASTMILE WORKS",array5,"Quận 1, Hồ Chí Minh","4 jobs",array6)
